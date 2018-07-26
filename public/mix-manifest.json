@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/vendor/jquery-1.12.4.min.js": "/js/vendor/jquery-1.12.4.min.js",
+    "/js/bootstrap.min.js": "/js/bootstrap.min.js",
+    "/js/jquery.stellar.min.js": "/js/jquery.stellar.min.js",
+    "/js/magnific.min.js": "/js/magnific.min.js",
+    "/js/venobox.min.js": "/js/venobox.min.js",
+    "/js/form-validator.min.js": "/js/form-validator.min.js"
+}
