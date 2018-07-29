@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PagesController@index');
 Route::view('about', 'about');
 Route::view('contact', 'contact');
 Route::view('team', 'team');

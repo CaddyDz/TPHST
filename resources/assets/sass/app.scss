@@ -2,20 +2,20 @@
      CSS INDEX
     ===================
 
-  1. Theme Default CSS (body, link color, section etc)
+    1. Theme Default CSS (body, link color, section etc)
 	2. Header top Area
 		2.1 Header Middle  Area 
 		2.2 Header bottom  Area
 		2.3. Sticky Header Area
 		2.4. Mobile Menu Area
 	3. Slider Area
-	4.banner Area
-	5.Welcome Services Area
+	4. banner Area
+	5. Welcome Services Area
 	6. About area
 	7. Services Area
 	8. Project Area
-	9.Testimonial Area Css
-	10.Counter Area
+	9. Testimonial Area Css
+	10. Counter Area
 	11. Blog Area
 	12. Footer Area
 	13. Home 2 Area
@@ -23,8 +23,8 @@
 	15. Breadcumbs Area
 	16. team  Area
 	17. Faq Area
-	18.Sub Services Pages
-	19.Contact Us page
+	18. Sub Services Pages
+	19. Contact Us page
 	20. Project Details page
 	21. Blog Details page
 -----------------------------------------------------------------------------------*/
@@ -76,7 +76,7 @@ a:focus {
 
 img {
     max-width: 100%;
-    height: auto;
+    // height: auto;
 }
 
 .fix {
@@ -873,6 +873,10 @@ div#preloader {
     border: 1px solid #fff;
     width: 40px;
     height: 40px;
+}
+
+.owl-stage {
+    margin: 0 auto;
 }
 
 .intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev {
