@@ -7,7 +7,7 @@ if (mix.inProduction()) {
             'resources/assets/css/responsive.css',
             'resources/assets/vendor/css/flaticon.css',
             'resources/assets/vendor/css/icon.css',
-         ], 'public/css/app.min.css').version();
+         ], 'public/css/app.css').version();
 } else {
     mix.js('resources/assets/js/app.js', 'public/js')
        .styles([
