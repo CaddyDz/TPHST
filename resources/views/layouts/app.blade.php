@@ -16,7 +16,7 @@
     {{--  Belongs to owl carousel  --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.transitions.min.css" integrity="sha256-3zREEes8dYXGOY4bOEdfzDBAzNxAB+1wdzTUbjpQhD4="
     crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/meanmenu.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CaddyDz/meanMenu@v2/meanmenu.min.css">
     {{-- font-awesome css --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     {{--  These two belongs to font awesome  --}}
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="/css/responsive.min.css">
 		{{-- modernizr js --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
     {{-- venobox js --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.7.0/venobox.min.js" integrity="sha256-Q+9tk/RrLpbpICsW8NaZrLZmlXhXcz3WNw2Q6yAgjrw=" crossorigin="anonymous"></script>
     {{-- meanmenu js --}}
-    <script src="https://cdn.jsdelivr.net/gh/s900cres/meanMenu@v2.0.8/jquery.meanmenu.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/CaddyDz/meanMenu@v2/meanmenu.min.js"></script>
     {{-- Form validator js --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.8.1/validator.min.js" integrity="sha256-ZCYp48kB7gXNRWbK0M6gji4MipHd9j4kTF+ItYoIkRk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js" integrity="sha256-t2YrqZoTLq/Qt8zIw0BMiuRC2X5+a3O7PODU8RwoyYw=" crossorigin="anonymous"></script>
