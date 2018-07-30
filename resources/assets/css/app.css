@@ -31,12 +31,6 @@
 
 /*----------------------------------------*/
 
-/*  Google Fonts
-/*----------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800,900|Open+Sans:400,400i,600,700,700i,800');
-/*----------------------------------------*/
-
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
@@ -76,7 +70,6 @@ a:focus {
 
 img {
     max-width: 100%;
-    // height: auto;
 }
 
 .fix {
@@ -404,12 +397,6 @@ div#preloader {
 
 .logo {
     display: block;
-}
-
-.logo a {
-    /* display: inline-block; */
-    /* height: auto; */
-    /* padding: 30px 0; */
 }
 
 .header-area .quote-button {
@@ -881,6 +868,7 @@ div#preloader {
 
 .intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev {
     left: 10%;
+    transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -889,6 +877,7 @@ div#preloader {
 
 .intro-carousel.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next {
     right: 10%;
+    transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -897,6 +886,7 @@ div#preloader {
 
 .intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-next {
     right: 2%;
+    transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -906,6 +896,7 @@ div#preloader {
 
 .intro-carousel.owl-carousel.owl-theme:hover .owl-controls .owl-nav div.owl-prev {
     left: 2%;
+    transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
@@ -978,6 +969,10 @@ div#preloader {
     font-weight: 700;
     font-size: 20px;
     margin-right: 20px;
+}
+
+.banner-contact span a {
+    color: green;
 }
 
 .banner-btn {
@@ -3248,8 +3243,6 @@ blockquote p {
 .comments-content-wrap span b {
     margin-right: 5px
 }
-
-.comments-content-wrap span a:hover {}
 
 span.post-time {
     margin-right: 5px

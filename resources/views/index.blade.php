@@ -3,11 +3,7 @@
 @section('content')
 @include('layouts.header')
 @include('partials.slider')
-<div class="banner-area">
-    <div class="container">
-        @include('partials.banner')
-    </div>
-</div>
+@include('partials.banner')
 @include('services.services_showcase')
 @include('partials.stats')
 @include('partials.about')
