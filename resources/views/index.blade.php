@@ -8,7 +8,7 @@
 @include('partials.stats')
 @include('partials.about')
 @include('partials.services')
-@include('partials.portfolio')
+@include('partials.portfolio', ['projects' => $projects])
 @include('partials.blog')
 @include('partials.testimonies')
 @include('partials.clients')

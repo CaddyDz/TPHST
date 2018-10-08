@@ -12,27 +12,29 @@
         </div>
         <div class="row">
             <div class="project-all">
-                @for ($i = 0; $i < 6; $i++)
-                    <div class="project-single all-padding">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a class="venobox" data-gall="myGallery" href="img/project/p1.jpg">
-                                    <img src="img/project/p1.jpg" alt="" />
-                                </a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <h4>Skyfal Tower</h4>
-                                        <span>Las Vegas ,</span>
-                                        <span>USA</span>
-                                        <div class="project-btn">
-                                            <a href="#">view project</a>
-                                        </div>
+                @foreach ($projects as $project)
+                <div class="project-single all-padding">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            @isset($project->image)
+                            <a class="venobox" data-gall="myGallery" href="{{ \Storage::url($project->image) }}">
+                                <img src="{{ \Storage::url($project->image) }}" alt="{{ $project->title }}" />
+                            </a>
+                            @endisset
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <h4>{{ $project->title }}</h4>
+                                    <span>{{ $project->description }}</span>
+                                    <span>{{ $project->location }}</span>
+                                    <div class="project-btn">
+                                        <a href="#">@lang('Aperçu de projet')</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endfor
+                </div>
+                @endforeach 
             </div>
         </div>
     </div>

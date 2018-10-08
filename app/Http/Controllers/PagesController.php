@@ -2,14 +2,16 @@
 
 namespace TPHST\Http\Controllers;
 
-use Illuminate\Http\Request;
 use TPHST\Client;
+use TPHST\Project;
+use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function index()
     {
         $clients = Client::all();
-        return view('index', compact('clients'));
+        $projects = Project::all();
+        return view('index', compact('clients', 'projects'));
     }
 }
