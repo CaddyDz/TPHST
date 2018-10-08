@@ -29,9 +29,9 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="about-image">
-                    <img src="{{ setting('about.image') }}" alt="Image">
+                    <img src="{{ \Storage::url(setting('about.image')) }}" alt="Image">
                     <span class="frame-img">
-                        <img src="{{ setting('about.frame') }}" alt="Image">
+                        <img src="{{ \Storage::url(setting('about.frame')) }}" alt="Image">
                         <span class="frame-text">13 ans d'expérience</span>
                     </span>
                 </div>

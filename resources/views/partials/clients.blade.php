@@ -7,7 +7,7 @@
                         @foreach ($clients as $client)
                             <div class="single-client">
                                 <a href="{{ $client->link }}">
-                                    <img src="{{ $client->logo }}" alt="{{ $client->name }}" width="165" height="165">
+                                    <img src="{{ \Storage::url($client->logo) }}" alt="{{ $client->name }}" width="165" height="165">
                                 </a>
                             </div>
                         @endforeach

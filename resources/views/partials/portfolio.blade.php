@@ -1,4 +1,4 @@
-<div class="project-area area-padding" style="background: url('{{ setting('projects.background') }}')">
+<div class="project-area area-padding" style="background: url('{{ \Storage::url(setting('projects.background')) }}')">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">

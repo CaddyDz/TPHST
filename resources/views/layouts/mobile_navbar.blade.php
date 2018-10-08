@@ -6,7 +6,7 @@
                 <div class="mobile-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{ setting('site.logo') }}" alt="Logo" />
+                            <img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo" />
                         </a>
                     </div>
                     <nav id="dropdown">

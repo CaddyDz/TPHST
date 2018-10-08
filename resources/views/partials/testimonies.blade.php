@@ -1,4 +1,4 @@
-<div class="testimonial-2-area area-padding" style="background: url('{{ setting('about.testimonies_background') }}');">
+<div class="testimonial-2-area area-padding" style="background: url('{{ \Storage::url(setting('about.testimonies_background')) }}');">
     <div class="testi-overly"></div>
     <div class="display-table">
         <div class="display-table-cell">

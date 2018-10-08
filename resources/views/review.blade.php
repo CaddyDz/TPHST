@@ -26,7 +26,7 @@
                 <div class="logo">
                     <!-- Brand -->
                     <a class="navbar-brand page-scroll sticky-logo" href="/">
-                        <img src="{{ setting('site.logo') }}" alt="Logo">
+                        <img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo">
                     </a>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="col-md-12">
                 <div class="mobile-menu">
                     <div class="logo">
-                        <a href="/"><img src="{{ setting('site.logo') }}" alt="Logo" /></a>
+                        <a href="/"><img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo" /></a>
                     </div>
                     <nav id="dropdown">
                           @include('partials.navbar_items')
@@ -117,7 +117,7 @@
 </header>
 <!-- header end -->
 <!-- Start Bottom Header -->
-<div class="page-area" style="background: url('{{ setting('about.background') }}')">
+<div class="page-area" style="background: url('{{ \Storage::url(setting('about.background')) }}')">
     <div class="breadcumb-overlay"></div>
     <div class="container">
         <div class="row">
