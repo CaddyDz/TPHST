@@ -17,8 +17,8 @@
                     <div class="single-awesome-project">
                         <div class="awesome-img">
                             @isset($project->image)
-                            <a class="venobox" data-gall="myGallery" href="{{ \Storage::url($project->image) }}">
-                                <img src="{{ \Storage::url($project->image) }}" alt="{{ $project->title }}" />
+                            <a class="venobox" data-gall="myGallery" href="{{ \Storage::url($project->image)[0] }}">
+                                <img src="{{ \Storage::url($project->image)[1] }}" alt="{{ $project->title }}" />
                             </a>
                             @endisset
                             <div class="add-actions text-center">
