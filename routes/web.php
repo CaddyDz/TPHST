@@ -17,7 +17,9 @@ Route::view('contact', 'contact');
 Route::view('team', 'team');
 Route::view('review', 'review');
 Route::view('faq', 'faq');
-Route::view('services', 'services');
+Route::get('services', function() {
+    return view('services.index');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
