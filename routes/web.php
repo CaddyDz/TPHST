@@ -1,5 +1,10 @@
 <?php
 
+// Necessary for laravel voyager
+if (App::environment('production', 'staging')) {
+    URL::forceScheme('https');
+}
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
