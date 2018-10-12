@@ -12,29 +12,31 @@
         </div>
         <div class="row">
             <div class="project-all">
-                @foreach ($projects as $project)
-                <div class="project-single all-padding">
-                    <div class="single-awesome-project">
-                        <div class="awesome-img">
-                            @isset($project->image)
-                            <a class="venobox" data-gall="myGallery" href="{{ \Storage::url(json_decode($project->image)[0]) }}">
-                                <img src="{{ \Storage::url(json_decode($project->image)[0]) }}" alt="{{ $project->title }}" />
-                            </a>
-                            @endisset
-                            <div class="add-actions text-center">
-                                <div class="project-dec">
-                                    <h4>{{ $project->title }}</h4>
-                                    <span>{{ $project->description }}</span>
-                                    <span>{{ $project->location }}</span>
-                                    <div class="project-btn">
-                                        <a href="#">@lang('Aperçu de projet')</a>
+                @if(count($projects))
+                    @foreach ($projects as $project)
+                    <div class="project-single all-padding">
+                        <div class="single-awesome-project">
+                            <div class="awesome-img">
+                                @isset($project->image)
+                                <a class="venobox" data-gall="myGallery" href="{{ \Storage::url(json_decode($project->image)[0]) }}">
+                                    <img src="{{ \Storage::url(json_decode($project->image)[0]) }}" alt="{{ $project->title }}" />
+                                </a>
+                                @endisset
+                                <div class="add-actions text-center">
+                                    <div class="project-dec">
+                                        <h4>{{ $project->title }}</h4>
+                                        <span>{{ $project->description }}</span>
+                                        <span>{{ $project->location }}</span>
+                                        <div class="project-btn">
+                                            <a href="#">@lang('Aperçu de projet')</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                @endforeach 
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@ before_script:
   - touch ./database/database.sqlite
   - composer install --no-interaction
   - php artisan key:generate
-  - php artisan migrate:refresh --seed --database=sqlite --no-interaction
+  - php artisan migrate --database=sqlite --no-interaction
 
 script:
   - vendor/bin/phpunit
