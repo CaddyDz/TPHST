@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 7.1
+
+services:
+  - mysql
+
+before_script:
+  - rm .env.example
+  - cp .env.travis .env
+  - composer self-update
+  - touch ./database/database.sqlite
+  - composer install --no-interaction
+  - php artisan key:generate
+  - php artisan migrate --database=sqlite --no-interaction
+
+script:
+  - vendor/bin/phpunit
