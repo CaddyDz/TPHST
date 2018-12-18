@@ -150,7 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        TPHST\Providers\NovaServiceProvider::class,
         /*
          * Application Service Providers...
          */

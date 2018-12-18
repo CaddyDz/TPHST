@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use TPHST\Service;
 use Illuminate\Support\Facades\Blade;
+use TPHST\Observers\ServiceObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,7 +23,9 @@ class AppServiceProvider extends ServiceProvider
         Blade::if('env', function ($env) {
             return app()->environment($env);
         });
+        Service::observe(ServiceObserver::class);
     }
+
 
     /**
      * Register any application services.

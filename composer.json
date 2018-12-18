@@ -12,7 +12,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
-        "tcg/voyager": "^1.1"
+        "laravel/nova": "*"
+
     },
     "require-dev": {
         "filp/whoops": "^2.0",
@@ -28,7 +29,10 @@
         ],
         "psr-4": {
             "TPHST\\": "app/"
-        }
+        },
+        "files": [
+            "app/Helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -59,10 +63,10 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": {
-        "hooks": {
-            "type": "composer",
-            "url": "https://larapack.io"
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./nova"
         }
-    }
+    ]
 }

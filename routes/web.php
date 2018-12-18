@@ -1,10 +1,5 @@
 <?php
 
-// Necessary for laravel voyager
-if (App::environment('production', 'staging')) {
-    URL::forceScheme('https');
-}
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +21,4 @@ Route::get('services', function() {
     return view('services.index');
 });
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-Route::get('{service}', 'ServicesController@show');
+// Route::get('{service}', 'ServicesController@show');
