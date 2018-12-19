@@ -8,8 +8,8 @@
                         <span class="call-us">
                             <i class="icon icon-phone-handset"></i>
                             Numéro vert : 
-                            <a href="tel:{{ setting('site.phone_number') }}">
-                                {{ setting('site.phone_number') }}
+                            <a href="tel:{{ setting('phone_number') }}">
+                                {{ setting('phone_number') }}
                             </a>
                         </span>
                         <span>Ou</span>

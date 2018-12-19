@@ -2,11 +2,10 @@
 
 namespace TPHST\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\View;
 use TPHST\Service;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Blade;
-use TPHST\Observers\ServiceObserver;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,23 +16,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('partials.navbar_items', function($view) {
+        View::composer(['partials.navbar_items', 'services.services_showcase'], function($view) {
             $view->with('services', Service::all());
         });
         Blade::if('env', function ($env) {
             return app()->environment($env);
         });
-        Service::observe(ServiceObserver::class);
-    }
-
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }

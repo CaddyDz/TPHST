@@ -4,26 +4,27 @@ namespace TPHST\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Place;
 use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Service extends Resource
+class Project extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'TPHST\Service';
+    public static $model = 'TPHST\Project';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'title';
 
     /**
      * The columns that should be searched.
@@ -31,7 +32,7 @@ class Service extends Resource
      * @var array
      */
     public static $search = [
-        'name',
+        'title', 'description', 'location',
     ];
 
     /**
@@ -44,11 +45,11 @@ class Service extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Name')->sortable()
-                ->rules('required', 'min:3', 'max:50'),
+            Text::make('Title'),
             Textarea::make('Description'),
+            Place::make('Location'),
             Image::make('Image')->disk('public')
-                ->path('services')->prunable(),
+                 ->path('projects'),
         ];
     }
 

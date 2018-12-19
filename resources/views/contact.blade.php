@@ -26,7 +26,7 @@
                 <div class="logo">
                     <!-- Brand -->
                     <a class="navbar-brand page-scroll sticky-logo" href="/">
-                        <img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo">
+                        <img src="/img/logo.png" width="40%" alt="Logo">
                     </a>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="col-md-12">
                 <div class="mobile-menu">
                     <div class="logo">
-                        <a href="/"><img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo" /></a>
+                        <a href="/"><img src="/img/logo.png" alt="Logo" /></a>
                     </div>
                     <nav id="dropdown">
                         @include('partials.navbar_items')

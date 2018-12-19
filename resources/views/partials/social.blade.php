@@ -1,20 +1,20 @@
 <ul>
-    <li>
+    {{-- <li>
         <a href="#">
             <i class="fa fa-skype"></i>
         </a>
-    </li>
+    </li> --}}
     <li>
-        <a href="mailto:{{ setting('site.info_email') }}">
+        <a href="mailto:{{ setting('info_email') }}">
             <i class="fa fa-envelope"></i>
         </a>
     </li>
-    <li>
+    {{-- <li>
         <a href="#">
             <i class="fa fa-google"></i>
         </a>
-    </li>
-    <li>
+    </li> --}}
+    {{-- <li>
         <a href="#">
             <i class="fa fa-twitter"></i>
         </a>
@@ -23,5 +23,5 @@
         <a href="#">
             <i class="fa fa-facebook"></i>
         </a>
-    </li>
+    </li> --}}
 </ul>

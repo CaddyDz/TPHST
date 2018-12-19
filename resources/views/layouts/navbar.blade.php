@@ -7,7 +7,7 @@
                 <div class="logo">
                     {{-- Brand--}}
                     <a class="navbar-brand page-scroll sticky-logo" href="/">
-                        <img src="{{ \Storage::url(setting('site.logo')) }}" alt="Logo">
+                        <img src="/img/logo.png" width="40%" alt="Logo">
                     </a>
                 </div>
             </div>

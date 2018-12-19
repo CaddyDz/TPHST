@@ -21,4 +21,6 @@ Route::get('services', function() {
     return view('services.index');
 });
 
-// Route::get('{service}', 'ServicesController@show');
+Route::get('{service}', 'ServicesController@show')
+     ->name('service')
+     ->where('service', '^(?!nova|admin)[أ-يa-zA-Z0-9-_]*$');
