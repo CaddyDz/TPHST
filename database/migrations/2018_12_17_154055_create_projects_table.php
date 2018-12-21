@@ -18,9 +18,7 @@ class CreateProjectsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('location')->nullable();
-            $table->string('city')->nullable();
-            $table->text('state')->nullable();
-            $table->string('zip_code')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

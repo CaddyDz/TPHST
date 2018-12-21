@@ -47,10 +47,7 @@ class Project extends Resource
             ID::make()->sortable(),
             Text::make('Titre', 'title'),
             Textarea::make('Description'),
-            Place::make('Address', 'location')
-                ->city('city')
-                ->state('state')
-                ->postalCode('zip_code'),
+            Place::make('Adresse', 'location')->onlyCities(),
             Image::make('Image')->disk('public')
                  ->path('projects'),
         ];

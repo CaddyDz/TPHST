@@ -18,8 +18,8 @@
                         <div class="single-awesome-project">
                             <div class="awesome-img">
                                 @isset($project->image)
-                                <a class="venobox" data-gall="myGallery" href="{{ \Storage::url(json_decode($project->image)[0]) }}">
-                                    <img src="{{ \Storage::url(json_decode($project->image)[0]) }}" alt="{{ $project->title }}" />
+                                <a class="venobox" data-gall="myGallery" href="{{ $project->image }}">
+                                    <img src="{{ $project->image }}" alt="{{ $project->title }}" />
                                 </a>
                                 @endisset
                                 <div class="add-actions text-center">
@@ -28,7 +28,9 @@
                                         <span>{{ $project->description }}</span>
                                         <span>{{ $project->location }}</span>
                                         <div class="project-btn">
-                                            <a href="#">@lang('Aperçu de projet')</a>
+                                            <a href="{{ route('project', ['project' => $project]) }}">
+                                                @lang('Aperçu de projet')
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
