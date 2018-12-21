@@ -45,12 +45,32 @@ class Project extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Title'),
+            Text::make('Titre', 'title'),
             Textarea::make('Description'),
-            Place::make('Location'),
+            Place::make('Address', 'location')
+                ->city('city')
+                ->state('state')
+                ->postalCode('zip_code'),
             Image::make('Image')->disk('public')
                  ->path('projects'),
         ];
+    }
+
+    /**
+     * Get the address fields for the resource.
+     *
+     * @return \Illuminate\Http\Resources\MergeValue
+     */
+    protected function addressFields()
+    {
+        return $this->merge([
+            Place::make('Address', 'address_line_1')->hideFromIndex(),
+            Text::make('Address Line 2')->hideFromIndex(),
+            Text::make('City')->hideFromIndex(),
+            Text::make('State')->hideFromIndex(),
+            Text::make('Postal Code')->hideFromIndex(),
+            Country::make('Country')->hideFromIndex(),
+        ]);
     }
 
     /**
