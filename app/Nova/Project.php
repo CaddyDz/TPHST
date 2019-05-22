@@ -61,7 +61,7 @@ class Project extends Resource
             ]),
             Place::make('Adresse', 'location')->onlyCities(),
             Images::make('Images', 'images')->hideFromIndex(),
-            Image::make('Image ')->disk('public')
+            Image::make('Image')->disk('public')
                 ->path('projects'),
         ];
     }
