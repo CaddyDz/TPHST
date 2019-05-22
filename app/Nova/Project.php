@@ -48,7 +48,8 @@ class Project extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Titre', 'title'),
-            Textarea::make('Description'),
+            Textarea::make('Description')
+                ->creationRules('required', 'string', 'min:6'),
             Textarea::make('Details'),
             Date::make('Date de démarrage', 'starting_date')->hideFromIndex(),
             Date::make('Date de finition', 'finishing_date')->hideFromIndex(),
