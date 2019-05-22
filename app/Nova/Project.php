@@ -58,7 +58,7 @@ class Project extends Resource
                 'pending' => 'en attendant',
                 'in_progress' => 'travaux en cours',
                 'completed' => 'fini',
-            ]),
+            ])->creationRules('required'),
             Place::make('Adresse', 'location')->onlyCities(),
             Images::make('Images', 'images')->hideFromIndex(),
             Image::make('Image')->disk('public')
