@@ -38,7 +38,7 @@ class SettingsTableSeeder extends Seeder
         ]);
         Setting::create([
             'key' => 'address',
-            'value' => 'Cité Belouadi',
+            'value' => 'Cité Belaouadi 9300 Larbaa Blida',
         ]);
     }
 }

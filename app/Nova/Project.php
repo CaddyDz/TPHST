@@ -50,18 +50,18 @@ class Project extends Resource
             Text::make('Titre', 'title'),
             Textarea::make('Description'),
             Textarea::make('Details'),
-            Date::make('Date de démarrage', 'starting_date'),
-            Date::make('Date de finition', 'finishing_date'),
-            Text::make('Durée', 'duration'),
+            Date::make('Date de démarrage', 'starting_date')->hideFromIndex(),
+            Date::make('Date de finition', 'finishing_date')->hideFromIndex(),
+            Text::make('Durée', 'duration')->hideFromIndex(),
             Select::make('Etat', 'status')->options([
                 'pending' => 'en attendant',
                 'in_progress' => 'travaux en cours',
                 'completed' => 'fini',
             ]),
-            Place::make(' Adresse ', ' location ')->onlyCities(),
-            Images::make(' Images ', ' images '),
-            Image::make(' Image ')->disk(' public ')
-                ->path(' projects '),
+            Place::make('Adresse', 'location')->onlyCities(),
+            Images::make('Images', 'images')->hideFromIndex(),
+            Image::make('Image ')->disk('public')
+                ->path('projects'),
         ];
     }
 
@@ -73,12 +73,12 @@ class Project extends Resource
     protected function addressFields()
     {
         return $this->merge([
-            Place::make(' Address ', ' address_line_1 ')->hideFromIndex(),
-            Text::make(' Address Line 2 ')->hideFromIndex(),
-            Text::make(' City ')->hideFromIndex(),
-            Text::make(' State ')->hideFromIndex(),
-            Text::make(' Postal Code ')->hideFromIndex(),
-            Country::make(' Country')->hideFromIndex(),
+            Place::make('Address', 'address_line_1')->hideFromIndex(),
+            Text::make('Address Line 2')->hideFromIndex(),
+            Text::make('City')->hideFromIndex(),
+            Text::make('State')->hideFromIndex(),
+            Text::make('Postal Code')->hideFromIndex(),
+            Country::make('Country')->hideFromIndex(),
         ]);
     }
 
