@@ -11,5 +11,5 @@
 @include('partials.portfolio', ['projects' => $projects])
 @include('partials.blog')
 @include('partials.testimonies')
-@include('partials.clients')
+@includeIf($clients->isNotEmpty(), 'partials.clients')
 @stop

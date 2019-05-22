@@ -14,7 +14,7 @@ class ProjectsTableSeeder extends Seeder
     {
         Project::create([
             'title' => 'Reconstruction d\'un ouvrage d\'art',
-            'description' => 'Reconstruction d\'un ouvrage d\'art sur RN18 PK37+700 (Ouled Dilmi)',
+            'description' => 'Reconstruction d\'un ouvrage d\'art sur RN18 PK37+700',
             'location' => 'Ouled Dilmi',
         ]);
     }

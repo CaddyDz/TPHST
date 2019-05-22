@@ -15,7 +15,7 @@
                     <div class="single-member">
                         <div class="team-img">
                             <a href="#">
-                                        <img src="img/team/t1.jpg" alt="">
+                                        <img src="/img/team/t1.jpg" alt="">
                                     </a>
                         </div>
                         <div class="team-social">
@@ -45,7 +45,7 @@
                     <div class="single-member">
                         <div class="team-img">
                             <a href="#">
-                                        <img src="img/team/t2.jpg" alt="">
+                                        <img src="/img/team/t2.jpg" alt="">
                                     </a>
                         </div>
                         <div class="team-social">
@@ -75,7 +75,7 @@
                     <div class="single-member">
                         <div class="team-img">
                             <a href="#">
-                                        <img src="img/team/t3.jpg" alt="">
+                                        <img src="/img/team/t3.jpg" alt="">
                                     </a>
                         </div>
                         <div class="team-social">

@@ -8,7 +8,9 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Place;
 use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Http\Requests\NovaRequest;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
+use Laravel\Nova\Fields\Date;
+use Laravel\Nova\Fields\Select;
 
 class Project extends Resource
 {
@@ -47,9 +49,19 @@ class Project extends Resource
             ID::make()->sortable(),
             Text::make('Titre', 'title'),
             Textarea::make('Description'),
-            Place::make('Adresse', 'location')->onlyCities(),
-            Image::make('Image')->disk('public')
-                 ->path('projects'),
+            Textarea::make('Details'),
+            Date::make('Date de démarrage', 'starting_date'),
+            Date::make('Date de finition', 'finishing_date'),
+            Text::make('Durée', 'duration'),
+            Select::make('Etat', 'status')->options([
+                'pending' => 'en attendant',
+                'in_progress' => 'travaux en cours',
+                'completed' => 'fini',
+            ]),
+            Place::make(' Adresse ', ' location ')->onlyCities(),
+            Images::make(' Images ', ' images '),
+            Image::make(' Image ')->disk(' public ')
+                ->path(' projects '),
         ];
     }
 
@@ -61,12 +73,12 @@ class Project extends Resource
     protected function addressFields()
     {
         return $this->merge([
-            Place::make('Address', 'address_line_1')->hideFromIndex(),
-            Text::make('Address Line 2')->hideFromIndex(),
-            Text::make('City')->hideFromIndex(),
-            Text::make('State')->hideFromIndex(),
-            Text::make('Postal Code')->hideFromIndex(),
-            Country::make('Country')->hideFromIndex(),
+            Place::make(' Address ', ' address_line_1 ')->hideFromIndex(),
+            Text::make(' Address Line 2 ')->hideFromIndex(),
+            Text::make(' City ')->hideFromIndex(),
+            Text::make(' State ')->hideFromIndex(),
+            Text::make(' Postal Code ')->hideFromIndex(),
+            Country::make(' Country')->hideFromIndex(),
         ]);
     }
 

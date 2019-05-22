@@ -36,5 +36,9 @@ class SettingsTableSeeder extends Seeder
             'key' => 'stats_employees',
             'value' => '65',
         ]);
+        Setting::create([
+            'key' => 'address',
+            'value' => 'Cité Belouadi',
+        ]);
     }
 }

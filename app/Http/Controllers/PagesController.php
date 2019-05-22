@@ -4,7 +4,6 @@ namespace TPHST\Http\Controllers;
 
 use TPHST\Client;
 use TPHST\Project;
-use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {

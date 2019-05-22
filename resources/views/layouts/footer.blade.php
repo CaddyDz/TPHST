@@ -16,8 +16,8 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="copyright">
                         <p>
-                            Droits d'auteur © 2018
-                            <a href="/">SARL TPHST</a> Tous les droits sont réservés
+                            Droits d'auteur © {{ date('Y') }}
+                            <a href="/">{{ config('app.name') }}</a> Tous les droits sont réservés
                         </p>
                     </div>
                 </div>

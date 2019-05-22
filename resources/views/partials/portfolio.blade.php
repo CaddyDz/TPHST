@@ -1,3 +1,4 @@
+@if($projects->isNotEmpty())
 <div class="project-area area-padding" style="background: url('{{ \Storage::url(setting('projects.background')) }}')">
     <div class="container">
         <div class="row">
@@ -11,35 +12,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="project-all">
-                @if(count($projects))
-                    @foreach ($projects as $project)
-                    <div class="project-single all-padding">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                @isset($project->image)
-                                <a class="venobox" data-gall="myGallery" href="{{ $project->image }}">
-                                    <img src="{{ $project->image }}" alt="{{ $project->title }}" />
-                                </a>
-                                @endisset
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <h4>{{ $project->title }}</h4>
-                                        <span>{{ $project->description }}</span>
-                                        <span>{{ $project->location }}</span>
-                                        <div class="project-btn">
-                                            <a href="{{ route('project', ['project' => $project]) }}">
-                                                @lang('Aperçu de projet')
-                                            </a>
-                                        </div>
+            <div class="project-all">          
+                @foreach ($projects as $project)
+                <div class="project-single all-padding">
+                    <div class="single-awesome-project">
+                        <div class="awesome-img">
+                            <a class="venobox" data-gall="myGallery" href="{{ $project->image }}">
+                                <img src="{{ $project->image }}" alt="{{ $project->title }}" />
+                            </a>
+                            <div class="add-actions text-center">
+                                <div class="project-dec">
+                                    <h4>{{ $project->title }}</h4>
+                                    <span>{{ $project->description }}</span>
+                                    <span>{{ $project->location }}</span>
+                                    <div class="project-btn">
+                                        <a href="{{ route('project', ['project' => $project]) }}">
+                                            @lang('Aperçu de projet')
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @endforeach
-                @endif
+                </div>
+                @endforeach
             </div>
         </div>
     </div>
 </div>
+@endif

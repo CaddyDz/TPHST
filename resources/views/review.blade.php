@@ -147,7 +147,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/1.jpg" alt="">
+                            <img src="/img/review/1.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>
@@ -164,7 +164,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/2.jpg" alt="">
+                            <img src="/img/review/2.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>
@@ -181,7 +181,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/3.jpg" alt="">
+                            <img src="/img/review/3.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>
@@ -198,7 +198,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/4.jpg" alt="">
+                            <img src="/img/review/4.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>
@@ -215,7 +215,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/5.jpg" alt="">
+                            <img src="/img/review/5.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>
@@ -232,7 +232,7 @@
                                 text for layouts, non-readability is of great importance.</p>
                         </div>
                         <div class="testimonial-img ">
-                            <img src="img/review/6.jpg" alt="">
+                            <img src="/img/review/6.jpg" alt="">
                             <div class="client-name">
                                 <h4>Arnold russel</h4>
                                 <span>Genarel Manager</span>

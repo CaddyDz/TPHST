@@ -6,11 +6,11 @@
             <p>Vous pouvez nous contacter via:</p>
             <div class="footer-contacts">
                 <p>
-                    <span>Tel:</span> {{ setting('site.phone_number') }}</p>
+                    <span>Tel:</span> {{ setting('phone_number') }}</p>
                 <p>
-                    <span>Email:</span> {{ setting('site.info_email') }}</p>
+                    <span>Email:</span> {{ setting('info_email') }}</p>
                 <p>
-                    <span>Siége:</span> {{ setting('site.address') }}</p>
+                    <span>Siége:</span> {{ setting('address') }}</p>
             </div>
             <div class="footer-icons">
                 <ul>
