@@ -120,7 +120,7 @@
  <!-- Start Single Project -->
  <div class="page-area">
   <div class="breadcumb-overlay"></div>
-  <div class="container" style="background-image: url(/{{ $project->image }})">
+  <div class="container" style="background-image: url({{ asset($project->thumb) }})">
       <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="breadcrumb text-center">
@@ -144,9 +144,9 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="project-inner project-carousel-2">
                   @foreach($images as $image)
-                  <div class="project-image">
-                      <img src="/{{ $image->id }}/{{ $image->file_name }}" alt="{{ $image->name }}">
-                  </div>
+                    <div class="project-image">
+                        <img src="/{{ $image->id }}/{{ $image->file_name }}" alt="{{ $image->name }}">
+                    </div>
                   @endforeach
               </div>
           </div>
@@ -156,7 +156,7 @@
                   <div class="project-name">
                       <ul>
                           <li>Projet: {{ $project->title }}</li>
-                          {{-- <li><span>Categories</span> : Apperment</li> --}}
+                          <li><span>Categories</span> : {{ optional($project->category)->name }}</li>
                           <li>Date de démarrage: {{ $project->starting_date }}</li>
                           <li>Etat: {{ $project->statusInFrench() }}</li>
                           {{-- <li><span>Architect</span> : Michel jone</li> --}}

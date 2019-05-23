@@ -39,7 +39,7 @@ class Project extends Model implements HasMedia
     return $this->belongsTo(Category::class);
   }
 
-  public function statusInFrench($value)
+  public function statusInFrench($value = null)
   {
     switch ($value) {
       case 'pending':
