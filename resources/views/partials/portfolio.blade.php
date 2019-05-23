@@ -1,5 +1,5 @@
 @if($projects->isNotEmpty())
-<div class="project-area area-padding" style="background: url('{{ \Storage::url(setting('projects.background')) }}')">
+<div class="project-area area-padding" style="background: url('{{ asset(image('Stats Background')) }}')">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -17,8 +17,8 @@
                 <div class="project-single all-padding">
                     <div class="single-awesome-project">
                         <div class="awesome-img">
-                            <a class="venobox" data-gall="myGallery" href="{{ $project->image }}">
-                                <img src="{{ $project->image }}" alt="{{ $project->title }}" />
+                            <a class="venobox" data-gall="myGallery" href="{{ $project->image ?? $project->thumb }}">
+                                <img src="{{ $project->thumb }}" alt="{{ $project->title }}" />
                             </a>
                             <div class="add-actions text-center">
                                 <div class="project-dec">

@@ -2,30 +2,26 @@
 
 namespace TPHST\Nova;
 
-use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\BelongsTo;
-use Benjaminhirsch\NovaSlugField\Slug;
-use Benjaminhirsch\NovaSlugField\TextWithSlug;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 
-class Article extends Resource
+class Testimony extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'TPHST\Article';
+    public static $model = 'TPHST\Testimony';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'title';
+    public static $title = 'body';
 
     /**
      * The columns that should be searched.
@@ -33,7 +29,7 @@ class Article extends Resource
      * @var array
      */
     public static $search = [
-        'title', 'excerpt', 'body'
+        'body', 'witness_name', 'witness_position'
     ];
 
     /**
@@ -45,19 +41,12 @@ class Article extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
-            TextWithSlug::make('Titre', 'title')->sortable()
-                ->rules('required', 'min:3', 'max:50')
-                ->slug('slug'),
-            Textarea::make('Extrait', 'excerpt')->rules('required', 'min:10', 'max:200')->hideFromIndex(),
-            Trix::make('Body')->rules('required', 'min:10'),
-            BelongsTo::make('Category')->searchable()->nullable(),
+            Text::make('Witness Name')->creationRules('required', 'min:3', 'max:50'),
+            Text::make('Witness Position')->creationRules('required'),
+            Textarea::make('Body')->creationRules('required', 'min:10', 'max:500'),
             Images::make('Image', 'main') // second parameter is the media collection name
                 ->conversionOnIndexView('avatar') // conversion used to display the image
                 ->rules('required'), // validation rules
-            // BelongsToMany::make('Tags')->searchable(),
-            Slug::make('Lien', 'slug')->hideFromIndex()
-                ->showUrlPreview(config('app.url') . '/blog')->rules('required', 'min:3', 'max:50'),
         ];
     }
 

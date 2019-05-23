@@ -18,8 +18,8 @@ class ProjectsTableSeeder extends Seeder
             'location' => 'Ouled Dilmi',
         ]);
         Project::create([
-            'title' => 'PROGRAMME LOGEMENTS LOCATION-VENTE',
-            'description' => 'Réalisation des travaux de viabilistion de 2000 logements et des locaux à usage commercial et professionel y afférent ville nouvelle Sidi Abdellah WILIYA d\'ALGER << Programme des 230000 logements Location-vente >>',
+            'title' => 'Programme des 230000 logements Location-vente ',
+            'description' => 'Réalisation des travaux de viabilistion de 2000 logements et des locaux à usage commercial et professionel y afférent',
             'location' => 'ville nouvelle Sidi Abdellah WILIYA d\'ALGER',
         ]);
         Project::create([

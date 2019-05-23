@@ -1,15 +1,15 @@
 {{-- service area start --}}
-@if($services->count())
+@if($services->isNotEmpty())
 <div class="welcome-area area-padding">
     <div class="container">
         <div class="row">
             <div class="well-main-services">
-                @foreach ($services as $service)
+                @foreach ($services->take(6) as $service)
                 {{-- single-well end --}}
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="well-services">
                         <div class="services-img">
-                            <img src="{{ asset($service->image) }}" alt="{{ $service->name }}">
+                            <img src="{{ asset($service->thumb) }}" alt="{{ $service->name }}">
                         </div>
                         <div class="main-services">
                             <div class="service-content">

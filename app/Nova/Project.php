@@ -5,14 +5,12 @@ namespace TPHST\Nova;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\Place;
-use Laravel\Nova\Fields\Textarea;
-use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\Date;
+use Laravel\Nova\Fields\Place;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 
 class Project extends Resource
 {
@@ -63,9 +61,9 @@ class Project extends Resource
             ])->creationRules('required')->displayUsingLabels(),
             BelongsTo::make('Category')->searchable(),
             Place::make('Adresse', 'location')->onlyCities()->hideFromIndex(),
-            Images::make('Images', 'images')->hideFromIndex(),
-            Image::make('Image')->disk('public')
-                ->path('projects'),
+            Images::make('Image', 'main') // second parameter is the media collection name
+                ->conversionOnIndexView('avatar') // conversion used to display the image
+                ->rules('required'), // validation rules
         ];
     }
 

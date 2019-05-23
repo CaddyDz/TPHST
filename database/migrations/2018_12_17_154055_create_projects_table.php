@@ -24,7 +24,6 @@ class CreateProjectsTable extends Migration
             $table->date('finishing_date')->nullable();
             $table->string('duration')->nullable();
             $table->string('location')->nullable();
-            $table->string('image')->nullable();
             $table->enum('status', ['pending', 'in_progress', 'completed']);
             $table->timestamps();
         });

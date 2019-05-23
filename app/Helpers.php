@@ -19,7 +19,7 @@ function setting($key)
 
 function image($name)
 {
-   return optional(Image::where('name', $name)->first())->path;
+   return optional(Image::where('name', $name)->first())->path ?? "/img/$name.jpg";
 }
 
 function sluggify($string)

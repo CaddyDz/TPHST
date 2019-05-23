@@ -13,9 +13,9 @@
         </div>
         <div class="row">
             <div class="blog-grid home-blog">
-                @for ($i = 0; $i < 3; $i++)
-                    @include( 'blog.article_preview')
-                @endfor 
+                @foreach ($articles as $article)
+                    @include('blog.article_preview')
+                @endforeach
             </div>
         </div>
     </div>

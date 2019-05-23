@@ -1,4 +1,5 @@
-<div class="testimonial-2-area area-padding" style="background: url('{{ \Storage::url(setting('about.testimonies_background')) }}');">
+@if ($testimonies->count() > 1)
+<div class="testimonial-2-area area-padding" style="background: url('{{ asset(image('Testimonies Background')) }}');">
     <div class="testi-overly"></div>
     <div class="display-table">
         <div class="display-table-cell">
@@ -10,57 +11,21 @@
                             <div class="Reviews-content">
                                 {{-- start testimonial carousel --}}
                                 <div class="testimonial-carousel item-indicator">
+                                    @foreach ($testimonies as $testimony)
                                     <div class="single-testimonial">
-                                        <div class="testimonial-text">
-                                            <p>Dummy text is also used to demonstrate the appearance of different typefaces
-                                                and layouts, and in general the content of dummy text is nonsensical. Due
-                                                to its widespread use as filler text for layouts, non-readability is of great
-                                                importance.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-img ">
-                                            <img src="/img/review/1.jpg" alt="">
-                                            <div class="client-name">
-                                                <h4>Arnold russel</h4>
-                                                <span>Genarel Manager</span>
+                                            <div class="testimonial-text">
+                                                <p>{{ $testimony->body }}</p>
+                                            </div>
+                                            <div class="testimonial-img ">
+                                                <img src="{{ $testimony->witnessAvatar }}" alt="{{ $testimony->witness_name }}">
+                                                <div class="client-name">
+                                                    <h4>{{ $testimony->witness_name }}</h4>
+                                                    <span>{{ $testimony->witness_position }}</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    {{-- End single item --}}
-                                    <div class="single-testimonial ">
-                                        <div class="testimonial-text">
-                                            <p>Dummy text is also used to demonstrate the appearance of different typefaces
-                                                and layouts, and in general the content of dummy text is nonsensical. Due
-                                                to its widespread use as filler text for layouts, non-readability is of great
-                                                importance.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-img ">
-                                            <img src="/img/review/2.jpg" alt="">
-                                            <div class="client-name">
-                                                <h4>Arnold russel</h4>
-                                                <span>Genarel Manager</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {{-- End single item --}}
-                                    <div class="single-testimonial">
-                                        <div class="testimonial-text">
-                                            <p>Dummy text is also used to demonstrate the appearance of different typefaces
-                                                and layouts, and in general the content of dummy text is nonsensical. Due
-                                                to its widespread use as filler text for layouts, non-readability is of great
-                                                importance.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-img ">
-                                            <img src="/img/review/1.jpg" alt="">
-                                            <div class="client-name">
-                                                <h4>Arnold russel</h4>
-                                                <span>Genarel Manager</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {{-- End single item --}}
+                                        {{-- End single item --}}
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -70,4 +35,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>    
+@endif

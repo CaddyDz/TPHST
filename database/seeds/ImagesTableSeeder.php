@@ -12,20 +12,20 @@ class ImagesTableSeeder extends Seeder
      */
     public function run()
     {
-        Image::create([
-            'name' => 'About Background'
-        ]);
-        Image::create([
-            'name' => 'About Image'
-        ]);
-        Image::create([
-            'name' => 'About Frame'
-        ]);
-        Image::create([
-            'name' => 'About Background'
-        ]);
-        Image::create([
-            'name' => 'Stats Background'
-        ]);
+        $names = [
+            'About Background',
+            'About Image',
+            'About Frame',
+            'Stats Background',
+            'Testimonies Background',
+            'Slider 1',
+            'Slider 2',
+            'Slider 3',
+        ];
+        foreach ($names as $name) {
+            Image::create([
+                'name' => $name
+            ]);
+        }
     }
 }

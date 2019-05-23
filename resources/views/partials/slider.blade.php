@@ -4,7 +4,7 @@
     <div class="intro-carousel">
         <div class="intro-content">
             <div class="slider-images">
-                <img src="/img/slider/s3.jpg" alt="">
+                <img src="{{ image('Slider 3') }}" alt="Photo">
             </div>
             <div class="slider-content">
                 <div class="display-table">
@@ -37,7 +37,7 @@
         </div>
         <div class="intro-content">
             <div class="slider-images">
-                <img src="/img/slider/s1.jpg" alt="">
+                <img src="{{ image('Slider 1') }}" alt="Photo">
             </div>
             <div class="slider-content">
                 <div class="display-table">
