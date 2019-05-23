@@ -4,19 +4,16 @@ namespace TPHST\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Image;
-use Laravel\Nova\Fields\Textarea;
-use Benjaminhirsch\NovaSlugField\Slug;
-use Benjaminhirsch\NovaSlugField\TextWithSlug;
+use Laravel\Nova\Fields\Text;
 
-class Service extends Resource
+class Category extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'TPHST\Service';
+    public static $model = 'TPHST\Category';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -31,7 +28,7 @@ class Service extends Resource
      * @var array
      */
     public static $search = [
-        'name',
+        'id', 'name',
     ];
 
     /**
@@ -44,14 +41,7 @@ class Service extends Resource
     {
         return [
             ID::make()->sortable(),
-            TextWithSlug::make('Nom', 'name')->sortable()
-                ->rules('required', 'min:3', 'max:50')
-                ->slug('slug'),
-            Slug::make('Lien', 'slug')->hideFromIndex()->showUrlPreview(config('app.url'))
-                ->rules('required', 'min:3', 'max:50'),
-            Textarea::make('Description'),
-            Image::make('Image')->disk('public')
-                ->path('services')->prunable(),
+            Text::make('Nom', 'name')->creationRules('required'),
         ];
     }
 

@@ -10,8 +10,12 @@ class Project extends Model implements HasMedia
 {
   use HasMediaTrait;
 
+  public function category()
+  {
+    return $this->belongsTo(Category::class);
+  }
 
-  public function getStatusAttribute($value)
+  public function statusInFrench($value)
   {
     switch ($value) {
       case 'pending':

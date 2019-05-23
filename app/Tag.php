@@ -4,7 +4,7 @@ namespace TPHST;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectCategory extends Model
+class Tag extends Model
 {
     //
 }

@@ -1178,6 +1178,7 @@ div#preloader {
 
 .single-services {
     box-shadow: none;
+    min-height: 120px;
     margin-top: 30px;
     position: relative;
     z-index: 1;

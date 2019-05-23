@@ -1,5 +1,6 @@
 <?php
 
+use TPHST\Image;
 use TPHST\Setting;
 
 /**
@@ -14,4 +15,19 @@ use TPHST\Setting;
 function setting($key)
 {
    return optional(Setting::where('key', $key)->first())->value;
+}
+
+function image($name)
+{
+   return optional(Image::where('name', $name)->first())->path;
+}
+
+function sluggify($string)
+{
+   $url = trim($string);
+   $url = strtolower($url);
+   $url = preg_replace('|[^a-z-A-Z\p{Arabic}0-9 _]|iu', '', $url);
+   $url = preg_replace('/\s+/', ' ', $url);
+   $url = str_replace(' ', '-', $url);
+   return $url;
 }

@@ -13,9 +13,13 @@
                         </div>
                         <div class="main-services">
                             <div class="service-content">
-                                <h4>{{ $service->name }}</h4>
+                                <h4>
+                                    <a href="{{ route('service', ['service' => $service]) }}">
+                                        {{ $service->name }}
+                                    </a>
+                                </h4>
                                 <p>{{ $service->description }}</p>
-                                <a class="service-btn" href="{{ route('service', ['service', $service->slug]) }}">
+                                <a class="service-btn" href="{{ route('service', ['service' => $service]) }}">
                                     @lang('read more')
                                 </a>
                             </div>

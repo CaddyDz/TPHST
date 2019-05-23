@@ -2,7 +2,7 @@
     <div class="single-blog">
         <div class="blog-image">
             <a class="image-scale" href="#">
-                <img src="/img/blog/1.jpg" alt="">
+                {{-- <img src="{{ $article->image }}" alt=""> --}}
             </a>
         </div>
         <div class="blog-content">

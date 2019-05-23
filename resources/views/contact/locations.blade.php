@@ -9,15 +9,15 @@
                             <h5>Siége Social</h5>
                             <a href="https://www.google.com/maps/@36.5994526,3.0894648,108m/data=!3m1!1e3">
                                 <i class="fa fa-map"></i>
-                                <span>{{ setting('site.address') }}</span>
+                                <span>{{ setting('address') }}</span>
                             </a>
-                            <a href="tel:{{ setting('site.phone_number') }}">
+                            <a href="tel:{{ setting('phone_number') }}">
                                 <i class="fa fa-phone"></i>
-                                <span>{{ setting('site.phone_number') }}</span>
+                                <span>{{ setting('phone_number') }}</span>
                             </a>
-                            <a href="mailto:{{ setting('site.info_email') }}">
+                            <a href="mailto:{{ setting('info_email') }}">
                                 <i class="fa fa-envelope"></i>
-                                <span>{{ setting('site.info_email') }}</span>
+                                <span>{{ setting('info_email') }}</span>
                             </a>
                         </div>
                     </div>
@@ -31,13 +31,13 @@
                                 <i class="fa fa-map"></i>
                                 <span>...............</span>
                             </a>
-                            <a href="tel:{{ setting('site.phone_number') }}">
+                            <a href="tel:{{ setting('phone_number') }}">
                                 <i class="fa fa-phone"></i>
-                                <span>{{ setting('site.phone_number') }}</span>
+                                <span>{{ setting('phone_number') }}</span>
                             </a>
-                            <a href="mailto:{{ setting('site.info_email') }}">
+                            <a href="mailto:{{ setting('info_email') }}">
                                 <i class="fa fa-envelope"></i>
-                                <span>{{ setting('site.info_email') }}</span>
+                                <span>{{ setting('info_email') }}</span>
                             </a>
                         </div>
                     </div>
@@ -51,13 +51,13 @@
                                 <i class="fa fa-map"></i>
                                 <span>L'address de carrier</span>
                             </a>
-                            <a href="tel:{{ setting('site.phone_number') }}">
+                            <a href="tel:{{ setting('phone_number') }}">
                                 <i class="fa fa-phone"></i>
-                                <span>{{ setting('site.phone_number') }}</span>
+                                <span>{{ setting('phone_number') }}</span>
                             </a>
-                            <a href="mailto:{{ setting('site.info_email') }}">
+                            <a href="mailto:{{ setting('info_email') }}">
                                 <i class="fa fa-envelope"></i>
-                                <span>{{ setting('site.info_email') }}</span>
+                                <span>{{ setting('info_email') }}</span>
                             </a>
                         </div>
                     </div>

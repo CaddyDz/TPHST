@@ -10,87 +10,22 @@
         </div>
         <div class="row">
             <div class="services-all">
-                {{-- Start services --}}
+                {{-- Start service --}}
+                @foreach ($services as $service)
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-crane-tool"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">General Contracting</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
+                        <div class="single-services">
+                            <a class="service-images" href="{{ route('service', ['service' => $service]) }}">
+                                <i class="flaticon-{{ $service->icon }}"></i>
+                            </a>
+                            <div class="service-content">
+                                <h4>
+                                    <a href="{{ route('service', ['service' => $service]) }}">{{ $service->name }}</a>
+                                </h4>
+                                <p>{{ $service->description }}</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-transportation"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">Civil Works</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
-                        </div>
-                    </div>
-                </div>
-                {{-- Start services --}}
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-architecture-draw"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">Architectural Design</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
-                        </div>
-                    </div>
-                </div>
-                {{-- Start services --}}
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-crane-building"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">Infrastructure Works</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
-                        </div>
-                    </div>
-                </div>
-                {{-- Start services --}}
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-drill-holes"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">Electrical Systems</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
-                        </div>
-                    </div>
-                </div>
-                {{-- Start services --}}
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-services">
-                        <a class="service-images" href="#">
-                            <i class="flaticon-worker-pile"></i>
-                        </a>
-                        <div class="service-content">
-                            <h4>
-                                <a href="#">Resconstruction Services</a>
-                            </h4>
-                            <p>Construct is an engineering and general contracting group that has gained its expertise</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

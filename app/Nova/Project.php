@@ -11,6 +11,8 @@ use Laravel\Nova\Fields\Textarea;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
 
 class Project extends Resource
 {
@@ -46,10 +48,10 @@ class Project extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
+            ID::make()->sortable()->hideFromIndex(),
             Text::make('Titre', 'title'),
             Textarea::make('Description')
-                ->creationRules('required', 'string', 'min:6'),
+                ->creationRules('required', 'string', 'min:8'),
             Textarea::make('Details'),
             Date::make('Date de démarrage', 'starting_date')->hideFromIndex(),
             Date::make('Date de finition', 'finishing_date')->hideFromIndex(),
@@ -58,8 +60,9 @@ class Project extends Resource
                 'pending' => 'en attendant',
                 'in_progress' => 'travaux en cours',
                 'completed' => 'fini',
-            ])->creationRules('required'),
-            Place::make('Adresse', 'location')->onlyCities(),
+            ])->creationRules('required')->displayUsingLabels(),
+            BelongsTo::make('Category')->searchable(),
+            Place::make('Adresse', 'location')->onlyCities()->hideFromIndex(),
             Images::make('Images', 'images')->hideFromIndex(),
             Image::make('Image')->disk('public')
                 ->path('projects'),

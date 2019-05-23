@@ -19,6 +19,8 @@ Route::view('review', 'review');
 Route::view('faq', 'faq');
 Route::get('projects/{project}', 'ProjectsController@show')->name('project');
 Route::get('services', 'ServicesController@index')->name('services');
+Route::get('blog/{article}', 'ArticlesController@show')->name('article');
+Route::post('/subscribe', 'MailingListController@subscribe')->name('subscribe');
 Route::get('{service}', 'ServicesController@show')
      ->name('service')
      ->where('service', '^(?!nova|admin)[أ-يa-zA-Z0-9-_]*$');

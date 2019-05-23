@@ -2,10 +2,10 @@
 
 namespace TPHST\Providers;
 
-use TPHST\Service;
+use TPHST\Article;
 use Laravel\Nova\Nova;
-use TPHST\Observers\ServiceObserver;
 use Illuminate\Support\Facades\Gate;
+use TPHST\Observers\ArticleObserver;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
@@ -19,7 +19,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         parent::boot();
         Nova::serving(function () {
-            Service::observe(ServiceObserver::class);
+            Article::observe(ArticleObserver::class);
         });
     }
 

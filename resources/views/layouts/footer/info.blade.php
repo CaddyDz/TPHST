@@ -6,14 +6,14 @@
             <p>Vous pouvez nous contacter via:</p>
             <div class="footer-contacts">
                 <p>
-                    <span>Tel:</span> {{ setting('phone_number') }}</p>
+                    <span>Tel:</span> <a href="tel:{{ setting('phone_number') }}">{{ setting('phone_number') }}</a></p>
                 <p>
-                    <span>Email:</span> {{ setting('info_email') }}</p>
+                    <span>Email:</span> <a href="mailto:{{ setting('info_email') }}">{{ setting('info_email') }}</a></p>
                 <p>
                     <span>Siége:</span> {{ setting('address') }}</p>
             </div>
             <div class="footer-icons">
-                <ul>
+                {{-- <ul>
                     <li>
                         <a href="#">
                             <i class="fa fa-facebook"></i>
@@ -39,7 +39,7 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
     </div>

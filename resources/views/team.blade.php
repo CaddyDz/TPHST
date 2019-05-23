@@ -38,8 +38,8 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="header-info-text">
-                            <span class="info-first">{{ setting('site.phone_number') }}</span>
-                            <span class="info-simple">{{ setting('site.info_email') }}</span>
+                            <span class="info-first">{{ setting('phone_number') }}</span>
+                            <span class="info-simple">{{ setting('info_email') }}</span>
                         </div>
                     </div>
                     <div class="header-info">
@@ -47,7 +47,7 @@
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="header-info-text">
-                            <span class="info-first">{{ setting('site.address') }}</span>
+                            <span class="info-first">{{ setting('address') }}</span>
                             <span class="info-simple">Blida, Algérie</span>
                         </div>
                     </div>

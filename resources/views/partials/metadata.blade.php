@@ -1,21 +1,21 @@
 <ul>
-    @if(setting('site.info_email') != null)
+    @if(setting('info_email') != null)
     <li>
-        <a href="mailto:{{ setting('site.info_email') }}">
-            <i class="fa fa-envelope"></i>{{ setting('site.info_email') }}
+        <a href="mailto:{{ setting('info_email') }}">
+            <i class="fa fa-envelope"></i>{{ setting('info_email') }}
         </a>
     </li>
     @endif
-    @if(setting('site.phone_number') != null)
+    @if(setting('phone_number') != null)
     <li>
-        <a href="tel:{{ setting('site.phone_number') }}">
-            <i class="fa fa-phone"></i>{{ setting('site.phone_number') }}
+        <a href="tel:{{ setting('phone_number') }}">
+            <i class="fa fa-phone"></i>{{ setting('phone_number') }}
         </a>
     </li>
     @endif
-    @if(setting('site.schedule') != null)
+    @if(setting('schedule') != null)
     <li>
-        <a><i class="fa fa-clock-o"></i>{{ setting('site.schedule') }}</a>
+        <a><i class="fa fa-clock-o"></i>{{ setting('schedule') }}</a>
     </li>
     @endif
 </ul>
