@@ -17,7 +17,7 @@
                 <div class="project-single all-padding">
                     <div class="single-awesome-project">
                         <div class="awesome-img">
-                            <a class="venobox" data-gall="myGallery" href="{{ $project->image ?? $project->thumb }}">
+                            <a class="venobox" data-gall="myGallery" href="{{ $project->thumb }}">
                                 <img src="{{ $project->thumb }}" alt="{{ $project->title }}" />
                             </a>
                             <div class="add-actions text-center">
