@@ -13,8 +13,9 @@ class Project extends Model implements HasMedia
 
   public function getThumbAttribute()
   {
-    if ($this->getMedia('main')->isNotEmpty()) {
-      return $this->getMedia('main')[0]->getUrl('thumb');
+    $media = $this->getMedia('main');
+    if ($media->isNotEmpty()) {
+      return '/storage/' . $media[0]->id . '/conversions/' . $media[0]->name . '-thumb.jpg';
     }
     return asset('/img/Project.jpg');
   }

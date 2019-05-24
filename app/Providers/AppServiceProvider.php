@@ -8,6 +8,7 @@ use TPHST\Testimony;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use TPHST\Project;
 
 class AppServiceProvider extends ServiceProvider
 {
