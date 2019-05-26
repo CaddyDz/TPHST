@@ -64,6 +64,7 @@ class Project extends Resource
             Images::make('Image', 'main') // second parameter is the media collection name
                 ->conversionOnIndexView('avatar') // conversion used to display the image
                 ->rules('required'), // validation rules
+            Images::make('Photos', 'images')
         ];
     }
 

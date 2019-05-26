@@ -61,7 +61,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            //
+            new \Zoxta\NovaCloudflareCard\NovaCloudflareCard(),
         ];
     }
 
