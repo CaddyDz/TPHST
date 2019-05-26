@@ -20,6 +20,15 @@ class Project extends Model implements HasMedia
     return asset('/img/Project.jpg');
   }
 
+  public function getAvatarAttribute()
+  {
+    $media = $this->getMedia('main');
+    if ($media->isNotEmpty()) {
+      return '/storage/' . $media[0]->id . '/conversions/' . $media[0]->name . '-avatar.jpg';
+    }
+    return null;
+  }
+
   public function registerMediaConversions(Media $media = null)
   {
     $this->addMediaConversion('thumb')

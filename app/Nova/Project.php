@@ -11,6 +11,7 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
+use Laravel\Nova\Fields\Image;
 
 class Project extends Resource
 {
@@ -61,10 +62,15 @@ class Project extends Resource
             ])->creationRules('required')->displayUsingLabels(),
             BelongsTo::make('Category')->searchable(),
             Place::make('Adresse', 'location')->onlyCities()->hideFromIndex(),
+            Image::make('Photo Principal', function () {
+                return $this->thumb;
+            })->hideFromIndex(),
+            Image::make('Photo Principal', function () {
+                return $this->avatar;
+            })->hideFromDetail(),
             Images::make('Image', 'main') // second parameter is the media collection name
-                ->conversionOnIndexView('avatar') // conversion used to display the image
-                ->rules('required'), // validation rules
-            Images::make('Photos', 'images')
+                ->rules('required')->hideFromDetail()->hideFromIndex(), // validation rules
+            Images::make('Photos', 'images')->hideFromIndex(),
         ];
     }
 
