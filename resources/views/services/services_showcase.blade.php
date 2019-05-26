@@ -9,7 +9,7 @@
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="well-services">
                         <div class="services-img">
-                            <img src="{{ asset($service->thumb) }}" alt="{{ $service->name }}">
+                            <img src="{{ secure_asset($service->thumb) }}" alt="{{ $service->name }}">
                         </div>
                         <div class="main-services">
                             <div class="service-content">

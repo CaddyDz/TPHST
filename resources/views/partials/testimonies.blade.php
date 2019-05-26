@@ -1,5 +1,5 @@
 @if ($testimonies->count() > 1)
-<div class="testimonial-2-area area-padding" style="background: url('{{ asset(image('Testimonies Background')) }}');">
+<div class="testimonial-2-area area-padding" style="background: url('{{ secure_asset(image('Testimonies Background')) }}');">
     <div class="testi-overly"></div>
     <div class="display-table">
         <div class="display-table-cell">

@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="about-image">
-                    <img src="{{ asset(image('About Image')) }}" alt="Image">
+                    <img src="{{ secure_asset(image('About Image')) }}" alt="Image">
                     <span class="frame-img">
                         <img src="/img/frame.png" alt="Image">
                         <span class="frame-text">13 ans d'expérience</span>

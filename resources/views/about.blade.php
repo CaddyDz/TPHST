@@ -2,7 +2,7 @@
 @section('content')
 @include('partials.topbar_primary')
 <!-- Start Bottom Header -->
-<div class="page-area" style="background: url('{{ asset(image('About Background')) }}')">
+<div class="page-area" style="background: url('{{ secure_asset(image('About Background')) }}')">
     <div class="breadcumb-overlay"></div>
     <div class="container">
         <div class="row">

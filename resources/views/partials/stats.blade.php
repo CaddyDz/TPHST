@@ -1,4 +1,4 @@
-<div class="counter-area parallax-bg" data-stellar-background-ratio="0.6" style="background: rgba(0, 0, 0, 0) url('{{ asset(image('Stats Background')) }}') no-repeat scroll top center / cover;">
+<div class="counter-area parallax-bg" data-stellar-background-ratio="0.6" style="background: rgba(0, 0, 0, 0) url('{{ secure_asset(image('Stats Background')) }}') no-repeat scroll top center / cover;">
     <div class="display-table">
         <div class="display-table-cell">
             <div class="container">

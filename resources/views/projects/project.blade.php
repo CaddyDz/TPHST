@@ -120,7 +120,7 @@
  <!-- Start Single Project -->
  <div class="page-area">
   <div class="breadcumb-overlay"></div>
-  <div class="container" style="background-image: url({{ asset($project->thumb) }})">
+  <div class="container" style="background-image: url({{ secure_asset($project->thumb) }})">
       <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="breadcrumb text-center">

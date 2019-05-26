@@ -1,5 +1,5 @@
 @if($projects->isNotEmpty())
-<div class="project-area area-padding" style="background: url('{{ asset(image('Stats Background')) }}')">
+<div class="project-area area-padding" style="background: url('{{ secure_secure_asset(image('Stats Background')) }}')">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">

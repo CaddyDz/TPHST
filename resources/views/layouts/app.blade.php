@@ -38,7 +38,6 @@
 			<p class="browserupgrade">
 			You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="preloader"></div>
     @yield('content')
     @include('layouts.footer')
     {{-- jquery latest version --}}
