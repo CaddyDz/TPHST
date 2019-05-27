@@ -15,16 +15,16 @@ class Project extends Model implements HasMedia
   {
     $media = $this->getMedia('main');
     if ($media->isNotEmpty()) {
-      return '/storage/' . $media[0]->id . '/conversions/' . $media[0]->name . '-thumb.jpg';
+      return $media[0]->getUrl('thumb');
     }
-    return asset('/img/Project.jpg');
+    return '/img/Project.jpg';
   }
 
   public function getAvatarAttribute()
   {
     $media = $this->getMedia('main');
     if ($media->isNotEmpty()) {
-      return '/storage/' . $media[0]->id . '/conversions/' . $media[0]->name . '-avatar.jpg';
+      return $media[0]->getUrl('avatar');
     }
     return null;
   }
