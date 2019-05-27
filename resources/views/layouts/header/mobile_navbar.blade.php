@@ -10,7 +10,7 @@
                         </a>
                     </div>
                     <nav id="dropdown">
-                        @include('partials.navbar_items')
+                        @include('layouts.header.navbar_items')
                     </nav>
                 </div>
             </div>

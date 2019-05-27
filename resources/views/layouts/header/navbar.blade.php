@@ -20,7 +20,7 @@
                 <nav class="navbar navbar-default">
                     <div class="collapse navbar-collapse" id="navbar-example">
                         <div class="main-menu">
-                            @include('partials.navbar_items')
+                            @include('layouts.header.navbar_items')
                         </div>
                     </div>
                 </nav>

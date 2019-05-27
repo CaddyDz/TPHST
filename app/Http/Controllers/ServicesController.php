@@ -3,6 +3,7 @@
 namespace TPHST\Http\Controllers;
 
 use Illuminate\Http\Request;
+use TPHST\Service;
 
 class ServicesController extends Controller
 {
@@ -17,13 +18,13 @@ class ServicesController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified service.
      *
-     * @param  int  $id
+     * @param \TPHST\Service $service
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Service $service)
     {
-        //
+        return view('services.service', compact($service));
     }
 }

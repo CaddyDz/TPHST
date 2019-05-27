@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts.header')
+<header class="header-style-2">
+  @include('layouts.header.topbar')
+  @include('layouts.header.navbar')
+  @include('layouts.header.mobile_navbar')
+</header>
 @include('partials.slider')
 @include('partials.banner')
 @include('services.services_showcase')

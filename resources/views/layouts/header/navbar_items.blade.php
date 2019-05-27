@@ -22,7 +22,13 @@
         <a class="pagess" href="#">Projets</a>
         <ul class="sub-menu">
             <li><a href="{{ url('/projects') }}">Tout Projets</a></li>
-            <li><a href="{{ url('/project') }}">Single Project</a></li>
+            @foreach ($projects as $project)
+                <li>
+                    <a href="{{ route('project', ['project' => $project]) }}">
+                        {{ $project->title }}
+                    </a>
+                </li>
+            @endforeach
         </ul>
     </li>
     <li>

@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer([
-            'partials.navbar_items',
+            'layouts.header.navbar_items',
             'services.services_showcase',
             'layouts.footer.services',
             'partials.services'
@@ -32,6 +32,9 @@ class AppServiceProvider extends ServiceProvider
         });
         View::composer('partials.blog', function ($view) {
             $view->with('articles', Article::latest()->take(6)->get());
+        });
+        View::composer('layouts.header.navbar_items', function ($view) {
+            $view->with('projects', Project::latest()->take(6)->get());
         });
         View::composer('partials.testimonies', function ($view) {
             $view->with('testimonies', Testimony::all());

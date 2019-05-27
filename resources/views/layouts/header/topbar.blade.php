@@ -3,12 +3,12 @@
         <div class="row">
             <div class=" col-md-9 col-sm-9">
                 <div class="topbar-left">
-                    @include('partials.metadata')
+                    @include('layouts.header.metadata')
                 </div>
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="topbar-right">
-                    @include('partials.social')
+                    @include('layouts.header.social')
                 </div>
             </div>
         </div>

@@ -8,7 +8,10 @@ class ProjectsController extends Controller
 {
     public function show(Project $project)
     {
-        $images = $project->getMedia('images');
+        $images = $project->getMedia('projects');
+        $images = $images->mapWithKeys(function ($image) {
+            return [$image->name => $image->getUrl()];
+        });
         return view('projects.project', compact('project', 'images'));
     }
 }

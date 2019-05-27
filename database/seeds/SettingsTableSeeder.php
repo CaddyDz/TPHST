@@ -40,5 +40,9 @@ class SettingsTableSeeder extends Seeder
             'key' => 'address',
             'value' => 'Cité Belaouadi 9300 Larbaa Blida',
         ]);
+        Setting::create([
+            'key' => 'schedule',
+            'value' => 'Dim-Jeu : 8am - 4pm',
+        ]);
     }
 }

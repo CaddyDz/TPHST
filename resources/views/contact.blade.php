@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-6 col-sm-6">
                 <div class="topbar-right">
-                    @include('partials.social')
+                    @include('layouts.header.social')
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 <nav class="navbar navbar-default">
                     <div class="collapse navbar-collapse" id="navbar-example">
                         <div class="main-menu">
-    @include('partials.navbar_items')
+    @include('layouts.header.navbar_items')
                         </div>
                     </div>
                 </nav>
@@ -106,7 +106,7 @@
                         <a href="/"><img src="/img/logo.png" alt="Logo" /></a>
                     </div>
                     <nav id="dropdown">
-                        @include('partials.navbar_items')
+                        @include('layouts.header.navbar_items')
                     </nav>
                 </div>
             </div>
