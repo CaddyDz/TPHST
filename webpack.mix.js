@@ -15,7 +15,6 @@ if (mix.inProduction()) {
             'resources/assets/vendor/css/flaticon.css',
             'resources/assets/vendor/css/icon.css',
          ], 'public/css/app.css')
-         .copy(
-             'resources/assets/css/responsive.css', 'public/css/responsive.css'
-            );
+         .copy('resources/assets/css/responsive.css', 'public/css')
+         .sass('resources/assets/scss/vendor.scss', 'public/css');
 }

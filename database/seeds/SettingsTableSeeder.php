@@ -13,6 +13,10 @@ class SettingsTableSeeder extends Seeder
     public function run()
     {
         Setting::create([
+            'key' => 'title',
+            'value' => 'SARL TPHST FRERES KHENICHE',
+        ]);
+        Setting::create([
             'key' => 'phone_number',
             'value' => '023919561',
         ]);

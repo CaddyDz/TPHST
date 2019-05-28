@@ -200,7 +200,6 @@ select:focus {
     outline: none;
 }
 
-
 ::-moz-selection {
     background: #fbac02;
     text-shadow: none;
