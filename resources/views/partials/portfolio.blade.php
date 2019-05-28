@@ -18,7 +18,7 @@
                     <div class="single-awesome-project">
                         <div class="awesome-img">
                             <a class="venobox" data-gall="myGallery" href="{{ $project->thumb }}">
-                                <img src="{{ $project->thumb }}" alt="{{ $project->title }}" />
+                                <img src="{{ $project->thumb }}" alt="{{ $project->title }}" height="400"/>
                             </a>
                             <div class="add-actions text-center">
                                 <div class="project-dec">
