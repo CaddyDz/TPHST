@@ -4,9 +4,12 @@ namespace TPHST\Providers;
 
 use TPHST\Article;
 use Laravel\Nova\Nova;
+use Beyondcode\TinkerTool\Tinker;
 use Illuminate\Support\Facades\Gate;
 use TPHST\Observers\ArticleObserver;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Dniccum\CustomEmailSender\CustomEmailSender;
+use Zoxta\NovaCloudflareCard\NovaCloudflareCard;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -61,7 +64,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new \Zoxta\NovaCloudflareCard\NovaCloudflareCard(),
+            new NovaCloudflareCard(),
         ];
     }
 
@@ -73,7 +76,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools()
     {
         return [
-            new \Beyondcode\TinkerTool\Tinker(),
+            new Tinker(),
+            new CustomEmailSender(),
         ];
     }
 

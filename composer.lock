@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e48f0db74ace41c0c1c533dd70cdd346",
+    "content-hash": "f1c1a38d538b67d9c7f033f216d05692",
     "packages": [
         {
             "name": "benjaminhirsch/nova-slug-field",
@@ -213,6 +213,59 @@
                 "theme"
             ],
             "time": "2019-02-16T22:07:27+00:00"
+        },
+        {
+            "name": "dniccum/custom-email-sender",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dniccum/nova-custom-email-sender.git",
+                "reference": "5c4b628bde80d972e68974ec1b1904859184853a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dniccum/nova-custom-email-sender/zipball/5c4b628bde80d972e68974ec1b1904859184853a",
+                "reference": "5c4b628bde80d972e68974ec1b1904859184853a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dniccum\\CustomEmailSender\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dniccum\\CustomEmailSender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Doug Niccum",
+                    "email": "dniccumdesign@gmail.com",
+                    "homepage": "http://dniccumdesign.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A tool for Laravel's Nova administrator panel that allows you to send custom email messages that within your application that leverages the applications existing settings and configurations.",
+            "homepage": "https://github.com/dniccum/nova-custom-email-sender",
+            "keywords": [
+                "email",
+                "laravel",
+                "messages",
+                "nova",
+                "tool"
+            ],
+            "time": "2019-03-29T20:04:04+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
