@@ -48,4 +48,14 @@ class Project extends Model implements HasMedia
   {
     return $this->belongsTo(Category::class);
   }
+
+   /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'starting_date' => 'date',
+        'finishing_date' => 'date',
+    ];
 }
