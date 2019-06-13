@@ -10,6 +10,8 @@ use Laravel\Nova\Fields\Place;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Benjaminhirsch\NovaSlugField\Slug;
+use Benjaminhirsch\NovaSlugField\TextWithSlug;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 
 class Project extends Resource
@@ -47,7 +49,9 @@ class Project extends Resource
     {
         return [
             ID::make()->sortable()->hideFromIndex(),
-            Text::make('Titre', 'title'),
+            TextWithSlug::make('Titre', 'title')->sortable()
+                ->rules('required', 'min:3', 'max:50')
+                ->slug('slug'),
             Textarea::make('Description')
                 ->creationRules('required', 'string', 'min:8'),
             Textarea::make('Details'),
@@ -68,6 +72,8 @@ class Project extends Resource
             Images::make('Photos', 'projects')
                 ->conversionOnDetailView('thumb')
                 ->hideFromIndex(),
+            Slug::make('Lien', 'slug')->hideFromIndex()
+                ->showUrlPreview(config('app.url') . '/blog')->rules('required', 'min:3', 'max:50'),
         ];
     }
 

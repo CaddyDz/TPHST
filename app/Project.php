@@ -58,4 +58,14 @@ class Project extends Model implements HasMedia
         'starting_date' => 'date',
         'finishing_date' => 'date',
     ];
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+      return 'slug';
+    }
 }
