@@ -2,7 +2,6 @@
 
 namespace TPHST\Http\Controllers;
 
-use Illuminate\Http\Request;
 use TPHST\Service;
 
 class ServicesController extends Controller
@@ -25,6 +24,7 @@ class ServicesController extends Controller
      */
     public function show(Service $service)
     {
-        return view('services.service', compact($service));
+        $services = Service::all()->except($service->id);
+        return view('services.service', compact('service', 'services'));
     }
 }

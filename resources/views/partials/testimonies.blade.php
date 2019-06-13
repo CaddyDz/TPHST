@@ -1,4 +1,4 @@
-@if ($testimonies->count() > 1)
+@if ($testimonies->isNotEmpty())
 <div class="testimonial-2-area area-padding" style="background: url('{{ secure_asset(image('Testimonies Background')) }}');">
     <div class="testi-overly"></div>
     <div class="display-table">

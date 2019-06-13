@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
             'layouts.header.navbar_items',
             'services.services_showcase',
             'layouts.footer.services',
-            'partials.services'
+            'partials.services',
         ], function ($view) {
             $view->with('services', Service::all());
         });

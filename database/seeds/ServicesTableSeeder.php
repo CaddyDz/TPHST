@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TPHST\Service;
+use Illuminate\Database\Seeder;
 
 class ServicesTableSeeder extends Seeder
 {

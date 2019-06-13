@@ -19,8 +19,16 @@
                           <i class="fa fa-phone"></i>
                       </div>
                       <div class="header-info-text">
-                          <span class="info-first">{{ setting('phone_number') }}</span>
-                          <span class="info-simple">{{ setting('info_email') }}</span>
+                          <span class="info-first">
+                              <a href="tel:{{ setting('phone_number') }}">
+                                {{ setting('phone_number') }}
+                              </a>
+                          </span>
+                          <span class="info-simple">
+                            <a href="mailto:{{ setting('info_email') }}">
+                                {{ setting('info_email') }}
+                            </a>
+                          </span>
                       </div>
                   </div>
                   <div class="header-info">

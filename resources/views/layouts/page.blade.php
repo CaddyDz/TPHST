@@ -1,5 +1,8 @@
 @extends('layouts.app')
-<!-- Start top bar -->
+
+
+@section('header')
+{{-- Start top bar --}}
 <div class="topbar-area fix hidden-xs">
     <div class="container">
         <div class="row">
@@ -18,3 +21,4 @@
 </div>
 <!-- End top bar -->
 @include('layouts.header')
+@stop
