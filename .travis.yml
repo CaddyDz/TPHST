@@ -11,7 +11,9 @@ before_script:
   - cp .env.travis .env
   - composer self-update
   - touch ./database/database.sqlite
-  - composer install --no-interaction
+  - wget http://167.99.197.130/nova.zip
+  - unzip nova.zip
+  - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - php artisan key:generate
 
 script:
