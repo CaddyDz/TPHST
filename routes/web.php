@@ -17,6 +17,7 @@ Route::view('contact', 'contact');
 Route::view('team', 'team');
 Route::view('review', 'review');
 Route::view('faq', 'faq');
+Route::get('projects', 'ProjectsController@index')->name('projects');
 Route::get('projects/{project}', 'ProjectsController@show')->name('project');
 Route::get('services', 'ServicesController@index')->name('services');
 Route::get('blog/{article}', 'ArticlesController@show')->name('article');

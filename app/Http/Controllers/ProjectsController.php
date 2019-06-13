@@ -14,4 +14,10 @@ class ProjectsController extends Controller
         });
         return view('projects.project', compact('project', 'images'));
     }
+
+    public function index()
+    {
+        $projects = Project::all();
+        return view('projects.index', compact('projects'));
+    }
 }
