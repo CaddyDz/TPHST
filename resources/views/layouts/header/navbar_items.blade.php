@@ -10,7 +10,7 @@
         </ul>
     </li>
     <li>
-        <a class="pagess" href="#">Services</a>
+        <a class="pagess" href="{{ route('services') }}">Services</a>
         <ul class="sub-menu">
             <li><a href="{{ route('services') }}">Tout Services</a></li>
             @foreach($services as $service)
@@ -21,7 +21,7 @@
         </ul>
     </li>
     <li>
-        <a class="pagess" href="#">Projets</a>
+        <a class="pagess" href="{{ route('projects') }}">Projets</a>
         <ul class="sub-menu">
             <li><a href="{{ route('projects') }}">Tout Projets</a></li>
             @foreach ($projects as $project)
@@ -34,7 +34,7 @@
         </ul>
     </li>
     <li>
-        <a class="pagess" href="#">Activités</a>
+        <a class="pagess" href="{{ route('blog') }}">Activités</a>
         <ul class="sub-menu">
             <li><a href="{{ route('blog') }}">Toutes les activités</a></li>
         </ul>

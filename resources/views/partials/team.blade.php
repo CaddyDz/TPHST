@@ -20,10 +20,15 @@
                         </div>
                         <div class="team-social">
                             <ul class="social-icon">
-                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-rss"></i></a></li>
+                                <li>
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="team-content">

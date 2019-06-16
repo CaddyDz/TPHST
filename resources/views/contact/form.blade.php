@@ -9,18 +9,28 @@
                 <h5>Sur Réseaux Sociaux</h5>
                 <ul class="project-social">
                     <li>
-                        <a href="#">
+                        <a href="{{ setting('skype') }}">
+                            <i class="fa fa-skype"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ setting('facebook') }}">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ setting('twitter') }}">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ setting('google') }}">
                             <i class="fa fa-google"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ setting('instagram') }}">
+                            <i class="fa fa-instagram"></i>
                         </a>
                     </li>
                 </ul>

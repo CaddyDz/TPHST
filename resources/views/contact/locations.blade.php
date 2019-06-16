@@ -27,7 +27,7 @@
                     <div class="contact-icon">
                         <div class="single-contact">
                             <h5>Bureau D'étude</h5>
-                            <a href="#">
+                            <a href="{{ setting('office_address') }}">
                                 <i class="fa fa-map"></i>
                                 <span>...............</span>
                             </a>
@@ -47,7 +47,7 @@
                     <div class="contact-icon">
                         <div class="single-contact">
                             <h5>Carriére</h5>
-                            <a href="#">
+                            <a href="{{ setting('address') }}">
                                 <i class="fa fa-map"></i>
                                 <span>L'address de carrier</span>
                             </a>
