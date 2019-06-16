@@ -12,15 +12,16 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::view('about', 'about');
-Route::view('contact', 'contact');
-Route::view('team', 'team');
-Route::view('review', 'review');
-Route::view('faq', 'faq');
+Route::view('about', 'about')->name('about');
+Route::view('contact', 'contact')->name('contact');
+Route::view('team', 'team')->name('team');
+Route::view('review', 'review')->name('review');
+Route::view('faq', 'faq')->name('faq');
 Route::get('projects', 'ProjectsController@index')->name('projects');
 Route::get('projects/{project}', 'ProjectsController@show')->name('project');
 Route::get('services', 'ServicesController@index')->name('services');
 Route::get('blog/{article}', 'ArticlesController@show')->name('article');
+Route::get('blog', 'ArticlesController@index')->name('blog');
 Route::post('/subscribe', 'MailingListController@subscribe')->name('subscribe');
 Route::get('{service}', 'ServicesController@show')
      ->name('service')
