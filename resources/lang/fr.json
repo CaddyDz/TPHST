@@ -12,5 +12,12 @@
   "completed": "fini",
   "Download Brochures": "Téléchargez les brochures",
   "Online Support": "Support en ligne",
-  "24 hours online support our customer.Do not hesitate to ask any questions": "24 heures d'assistance en ligne notre client. N'hésitez pas à poser des questions"
+  "24 hours online support our customer.Do not hesitate to ask any questions": "24 heures d'assistance en ligne notre client. N'hésitez pas à poser des questions",
+  "All Rights Reserved": "Tous les droits sont réservés",
+  "Dark Theme": "Thème sombre",
+  "Purge Cloudflare's Cache": "Purger le cache de Cloudflare",
+  "This will clear ALL cached files on Cloudflare to force Cloudflare to fetch a fresh version of those files from your web server.": "Cela effacera TOUS les fichiers mis en cache sur Cloudflare pour obliger Cloudflare à récupérer une nouvelle version de ces fichiers sur votre serveur Web.",
+  "Usually needed to bust Cloudflare's cache when you are actively updating cached resources.": "Généralement nécessaire pour extraire le cache de Cloudflare lorsque vous mettez à jour activement les ressources en cache.",
+  "Cancel": "Annuler",
+  "Purge Everything": "Tout purger"
 }

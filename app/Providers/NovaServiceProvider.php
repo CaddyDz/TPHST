@@ -4,6 +4,7 @@ namespace TPHST\Providers;
 
 use TPHST\Article;
 use Laravel\Nova\Nova;
+use Illuminate\Support\Arr;
 use Beyondcode\TinkerTool\Tinker;
 use Illuminate\Support\Facades\Gate;
 use TPHST\Observers\ArticleObserver;
@@ -48,11 +49,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     protected function gate()
     {
-        Gate::define('viewNova', function ($user) {
-            return in_array($user->email, [
-                'dg@sarltphst.com',
-                'webmaster@sarltphst.com',
-            ]);
+        Gate::define('viewNova', function () {
+            return true;
         });
     }
 
@@ -75,19 +73,13 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function tools()
     {
-        return [
+        $tools = [
             new Tinker(),
             new CustomEmailSender(),
         ];
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
+        if (isAdmin(auth()->user())) {
+            return $tools;
+        }
+        return Arr::except($tools, 0);
     }
 }

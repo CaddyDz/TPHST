@@ -2,7 +2,8 @@
 
 namespace TPHST\Providers;
 
-use Illuminate\Support\Facades\Gate;
+use TPHST\Article;
+use TPHST\Policies\ArticlePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'TPHST\Model' => 'TPHST\Policies\ModelPolicy',
+        Article::class => ArticlePolicy::class,
     ];
 
     /**

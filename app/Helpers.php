@@ -31,3 +31,11 @@ function sluggify($string)
     $url = str_replace(' ', '-', $url);
     return $url;
 }
+
+function isAdmin($user)
+{
+    return in_array($user->email, [
+        'dg@sarltphst.com',
+        'webmaster@sarltphst.com',
+    ]);
+}
