@@ -4,17 +4,17 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class RoutesTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test index route.
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testIndexRoute()
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response->assertOk();
     }
 }
