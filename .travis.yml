@@ -2,9 +2,7 @@ language: php
 
 php:
   - 7.2
-
-services:
-  - mysql
+  - 7.3
 
 before_script:
   - rm .env.example

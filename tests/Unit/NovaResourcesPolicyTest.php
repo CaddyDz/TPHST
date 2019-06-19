@@ -20,7 +20,7 @@ class NovaResourcesPolicyTest extends TestCase
     {
         $this->login();
         Nova::resourcesIn(app_path('Nova'));
-        $resources = Arr::except(Nova::$resources, [0]);
+        $resources = Arr::except(Nova::$resources, [0, 1]);
         foreach ($resources as $resource) {
             $response = $this->get('nova-api/' . Str::plural(strtolower(class_basename($resource))) . '/cards');
             $response->assertForbidden();
