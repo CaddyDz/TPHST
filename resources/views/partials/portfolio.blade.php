@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline white-head text-center">
-                    <h3>Nos Projets</h3>
+                    <h3>@lang('Nos Projets')</h3>
                     <p>
-                    Le TPHST est un groupe d'ingénierie et d'entrepreneur général qui a acquis son expertise au cours des treize dernières années.
+                    @lang("Le TPHST est un groupe d'ingénierie et d'entrepreneur général qui a acquis son expertise au cours des treize dernières années.")
                     </p>
                 </div>
             </div>

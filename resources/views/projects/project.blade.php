@@ -28,8 +28,8 @@
                       <ul>
                           <li>Projet: {{ $project->title }}</li>
                           <li><span>Categories</span> : {{ optional($project->category)->name }}</li>
-                          <li>Date de démarrage: {{ optional($project->starting_date)->toDateString() }}</li>
-                          <li>Date de finition: {{ optional($project->finishing_date)->toDateString() }}</li>
+                          {{-- <li>Date de démarrage: {{ optional($project->starting_date)->toDateString() }}</li>
+                          <li>Date de finition: {{ optional($project->finishing_date)->toDateString() }}</li> --}}
                           <li>Etat: {{ __($project->status) }}</li>
                       </ul>
                   </div>
