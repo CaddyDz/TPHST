@@ -66,10 +66,6 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
         ],
-        "pre-install-cmd": [
-            "wget http://167.99.197.130/nova.zip",
-            "unzip nova.zip"
-        ],
         "post-install-cmd": [
             "@php -r \"mkdir('./resources/lang/vendor/nova', 0776, true);\"",
             "@php -r \"copy('https://raw.githubusercontent.com/franzdumfart/laravel-nova-localizations/master/lang/fr.json', './resources/lang/vendor/nova/fr.json') || exit (1);\"",
