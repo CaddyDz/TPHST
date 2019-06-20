@@ -13,6 +13,6 @@ yarn-error.log
 .env
 .DS_Store
 /nova
-/resources/lang/vendor
+/resources/lang/vendor/nova
 /resources/views/vendor/*
 !/resources/views/vendor/nova
