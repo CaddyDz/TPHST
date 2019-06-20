@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="nova-dark-theme h-full font-sans antialiased">
+<html lang="en" class="h-full font-sans antialiased">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1280">
