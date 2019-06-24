@@ -12,7 +12,7 @@
         "benjaminhirsch/nova-slug-field": "^1.2",
         "beyondcode/nova-tinker-tool": "^1.0",
         "david-griffiths/nova-dark-theme": "^1.0",
-        "dniccum/custom-email-sender": "^1.0",
+        "dniccum/custom-email-sender": "master",
         "doctrine/dbal": "^2.9",
         "ebess/advanced-nova-media-library": "^2.7",
         "fideloper/proxy": "^4.0",
@@ -86,6 +86,10 @@
         {
             "type": "path",
             "url": "./nova"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/CaddyDz/nova-custom-email-sender"
         }
     ]
 }
