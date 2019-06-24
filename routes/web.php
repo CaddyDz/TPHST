@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::view('about', 'about')->name('about');
+Route::get('about', 'PagesController@getAbout')->name('about');
 Route::redirect('email', 'admin/custom-email-sender')->middleware('auth');
 Route::view('contact', 'contact')->name('contact');
 Route::view('team', 'team')->name('team');
