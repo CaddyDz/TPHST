@@ -66,6 +66,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js" integrity="sha256-t2YrqZoTLq/Qt8zIw0BMiuRC2X5+a3O7PODU8RwoyYw=" crossorigin="anonymous"></script>
     {{-- main js --}}
     <script src="{{ mix('/js/app.js') }}"></script>
+    @yield('js')
 </body>
 
 </html>

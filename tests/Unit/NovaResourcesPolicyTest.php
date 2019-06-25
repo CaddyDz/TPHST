@@ -18,9 +18,10 @@ class NovaResourcesPolicyTest extends TestCase
      */
     public function testNovaResourceAccess()
     {
-        $this->login();
-        Nova::resourcesIn(app_path('Nova'));
-        $resources = Arr::except(Nova::$resources, [0, 1]);
+        $this->login(); // login as a normal user
+        Nova::resourcesIn(app_path('Nova')); // Register all resources found in app/Nova directory
+        // Remove action resource from the array
+        $resources = array_diff(Nova::$resources, ["Laravel\Nova\Actions\ActionResource"]);
         foreach ($resources as $resource) {
             $response = $this->get('nova-api/' . Str::plural(strtolower(class_basename($resource))) . '/cards');
             $response->assertForbidden();

@@ -41,7 +41,8 @@
     <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="contact-form">
             <div class="row">
-                <form id="contactForm" method="POST" action="{{ url('/contact') }}" class="contact-form">
+                <form id="contactForm" method="POST" action="{{ route('contact') }}" class="contact-form">
+                    @csrf
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="text" id="name" class="form-control" placeholder="Nom" required data-error="S'il vous plaît entrez votre nom">
                         <div class="help-block with-errors"></div>
@@ -55,7 +56,7 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Écrivez votre message"></textarea>
+                        <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Écrivez votre message"></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
