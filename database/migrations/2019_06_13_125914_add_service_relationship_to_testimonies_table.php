@@ -26,8 +26,6 @@ class AddServiceRelationshipToTestimoniesTable extends Migration
      */
     public function down()
     {
-        Schema::table('testimonies', function (Blueprint $table) {
-            $table->dropColumn('service_id');
-        });
+        //
     }
 }
