@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TPHST\Setting;
+use Illuminate\Database\Seeder;
 
 class SettingsTableSeeder extends Seeder
 {
@@ -12,41 +12,23 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        Setting::create([
-            'key' => 'title',
-            'value' => 'SARL TPHST FRERES KHENICHE',
-        ]);
-        Setting::create([
-            'key' => 'phone_number',
-            'value' => '023919561',
-        ]);
-        Setting::create([
-            'key' => 'info_email',
-            'value' => 'info@sarltphst.com',
-        ]);
-        Setting::create([
-            'key' => 'stats_background',
-            'value' => '',
-        ]);
-        Setting::create([
-            'key' => 'stats_projects_finished',
-            'value' => '32',
-        ]);
-        Setting::create([
-            'key' => 'stats_projects_running',
-            'value' => '5',
-        ]);
-        Setting::create([
-            'key' => 'stats_employees',
-            'value' => '65',
-        ]);
-        Setting::create([
-            'key' => 'address',
-            'value' => 'Cité Belaouadi 9300 Larbaa Blida',
-        ]);
-        Setting::create([
-            'key' => 'schedule',
-            'value' => 'Dim-Jeu : 8am - 4pm',
-        ]);
+        $settings = [
+            'title' => 'SARL TPHST FRERES KHENICHE',
+            'phone_number' => '023919561',
+            'info_email' => 'info@sarltphst.com',
+            'stats_projects_finished' => '32',
+            'stats_projects_running' => '5',
+            'stats_employees' => '65',
+            'address' => 'Cité Belaouadi 9300 Larbaa Blida',
+            'schedule' => 'Dim-Jeu : 8am - 4pm',
+            'instagram' => 'https://www.instagram.com/tphstsarl/',
+            'facebook' => 'https://www.facebook.com/sarltphst',
+        ];
+        foreach ($settings as $key => $value) {
+            Setting::create([
+                'key' => $key,
+                'value' => $value,
+            ]);
+        }
     }
 }
