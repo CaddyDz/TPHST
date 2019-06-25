@@ -7,7 +7,7 @@
                     <div class="contact-icon">
                         <div class="single-contact">
                             <h5>Siége Social</h5>
-                            <a href="https://www.google.com/maps/@36.5994526,3.0894648,108m/data=!3m1!1e3">
+                            <a href="https://goo.gl/maps/w8KKWE4YAF2gkBnp8">
                                 <i class="fa fa-map"></i>
                                 <span>{{ setting('address') }}</span>
                             </a>
@@ -29,7 +29,7 @@
                             <h5>Bureau D'étude</h5>
                             <a href="{{ setting('office_address') }}">
                                 <i class="fa fa-map"></i>
-                                <span>...............</span>
+                                <span>Cité Bougara 2 H3XQ+QW Sidi Moussa</span>
                             </a>
                             <a href="tel:{{ setting('phone_number') }}">
                                 <i class="fa fa-phone"></i>
