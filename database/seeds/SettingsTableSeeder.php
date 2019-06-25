@@ -23,6 +23,7 @@ class SettingsTableSeeder extends Seeder
             'schedule' => 'Dim-Jeu : 8am - 4pm',
             'instagram' => 'https://www.instagram.com/tphstsarl/',
             'facebook' => 'https://www.facebook.com/sarltphst',
+            'twitter' => 'https://twitter.com/SarlTphst',
         ];
         foreach ($settings as $key => $value) {
             Setting::create([

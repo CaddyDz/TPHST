@@ -6,11 +6,10 @@ use TPHST\Setting;
 /**
  * return settings values
  *
- * Undocumented function long description
+ * Retreive setting value from database
  *
- * @param Type $var Description
- * @return type
- * @throws conditon
+ * @param string $key Key name
+ * @return string $value accompanying value
  **/
 function setting($key)
 {

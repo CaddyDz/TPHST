@@ -30,11 +30,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ setting('google') }}">
-                            <i class="fa fa-google"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="{{ setting('instagram') }}">
                             <i class="fa fa-instagram"></i>
                         </a>

@@ -55,11 +55,6 @@
                           </li>
                           <li>
                               <a href="#">
-                                  <i class="fa fa-google"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
                                   <i class="fa fa-pinterest"></i>
                               </a>
                           </li>
