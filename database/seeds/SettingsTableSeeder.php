@@ -24,6 +24,7 @@ class SettingsTableSeeder extends Seeder
             'instagram' => 'https://www.instagram.com/tphstsarl/',
             'facebook' => 'https://www.facebook.com/sarltphst',
             'twitter' => 'https://twitter.com/SarlTphst',
+            'skype' => 'live:social_5554',
         ];
         foreach ($settings as $key => $value) {
             Setting::create([
