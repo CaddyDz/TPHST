@@ -9,7 +9,7 @@
                 <h5>Sur Réseaux Sociaux</h5>
                 <ul class="project-social">
                     <li>
-                        <a href="{{ setting('skype') }}">
+                        <a href="skype:{{ setting('skype') }}">
                             <i class="fa fa-skype"></i>
                         </a>
                     </li>

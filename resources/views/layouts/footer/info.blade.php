@@ -15,7 +15,7 @@
             <div class="footer-icons">
                 <ul>
                     <li>
-                        <a href="{{ setting('skype') }}">
+                        <a href="skype:{{ setting('skype') }}">
                             <i class="fa fa-skype"></i>
                         </a>
                     </li>
