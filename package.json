@@ -13,7 +13,7 @@
         "axios": "^0.18",
         "bootstrap": "^3.3.7",
         "cross-env": "^5.1",
-        "jquery": "^1.12.4",
+        "jquery": "^3.4.0",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.11",
         "owl.carousel": "^2.3.4",
