@@ -47,9 +47,9 @@ class Article extends Resource
         return [
             ID::make()->sortable(),
             TextWithSlug::make('Titre', 'title')->sortable()
-                ->rules('required', 'min:3', 'max:50')
+                ->rules('required', 'min:3', 'max:100')
                 ->slug('slug'),
-            Textarea::make('Extrait', 'excerpt')->rules('required', 'min:10', 'max:200')->hideFromIndex(),
+            Textarea::make('Extrait', 'excerpt')->rules('required', 'min:10', 'max:500')->hideFromIndex(),
             Trix::make('Body')->rules('required', 'min:10'),
             BelongsTo::make('Category')->searchable()->nullable(),
             Images::make('Image', 'main') // second parameter is the media collection name
@@ -57,7 +57,7 @@ class Article extends Resource
                 ->rules('required'), // validation rules
             // BelongsToMany::make('Tags')->searchable(),
             Slug::make('Lien', 'slug')->hideFromIndex()
-                ->showUrlPreview(config('app.url') . '/blog')->rules('required', 'min:3', 'max:50'),
+                ->showUrlPreview(config('app.url') . '/blog')->rules('required', 'min:3', 'max:100'),
         ];
     }
 

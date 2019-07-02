@@ -156,9 +156,11 @@ return [
          */
         TPHST\Providers\AppServiceProvider::class,
         TPHST\Providers\AuthServiceProvider::class,
+        TPHST\Providers\BladeServiceProvider::class,
         // TPHST\Providers\BroadcastServiceProvider::class,
         TPHST\Providers\EventServiceProvider::class,
         TPHST\Providers\RouteServiceProvider::class,
+        TPHST\Providers\ViewComposerServiceProvider::class,
 
     ],
 

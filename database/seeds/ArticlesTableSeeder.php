@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TPHST\Article;
+use Illuminate\Database\Seeder;
 
 class ArticlesTableSeeder extends Seeder
 {

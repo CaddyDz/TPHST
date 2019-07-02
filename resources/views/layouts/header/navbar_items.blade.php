@@ -34,10 +34,17 @@
         </ul>
     </li>
     <li>
-        <a class="pagess" href="{{ route('blog') }}">Activités</a>
+        <a class="pagess" href="{{ route('blog') }}">@lang('Blog')</a>
         <ul class="sub-menu">
-            <li><a href="{{ route('blog') }}">Toutes les activités</a></li>
+            <li><a href="{{ route('blog') }}">@lang('All Articles')</a></li>
+            @foreach ($articles as $article)
+                <li>
+                    <a href="{{ route('article', ['article' => $article]) }}">
+                        {{ $article->title }}
+                    </a>
+                </li>
+            @endforeach
         </ul>
     </li>
-    <li><a href="{{ route('contact') }}">Contact</a></li>
+    <li><a href="{{ route('contact') }}">@lang('Contact')</a></li>
 </ul>

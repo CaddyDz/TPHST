@@ -2,11 +2,21 @@
 
 namespace TPHST\Http\Controllers;
 
-use Illuminate\Http\Request;
 use TPHST\Article;
 
 class ArticlesController extends Controller
 {
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('blog.index');
+    }
+
     /**
      * Display the specified resource.
      *
