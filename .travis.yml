@@ -15,4 +15,7 @@ before_script:
   - php artisan key:generate
 
 script:
-  - vendor/bin/phpunit
+  - vendor/bin/phpunit --coverage-clover=coverage.xml --verbose
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -t e0c83fab-4fe6-471a-8e62-f7e263b91602
