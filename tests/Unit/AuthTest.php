@@ -16,7 +16,6 @@ class AuthTest extends TestCase
     {
         $this->login();
         $response = $this->get('/admin/login');
-        
-        // $response->assertRedirect('/admin/custom-email-sender');
+        $response->assertRedirect('/admin');
     }
 }
