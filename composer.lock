@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "benjaminhirsch/nova-slug-field",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benjaminhirsch/nova-slug-field.git",
-                "reference": "4c5cee9adc12256e6cd89c3761f203f660e83568"
+                "reference": "207291988ea535d661e23b3f6cd33431cf9b739a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminhirsch/nova-slug-field/zipball/4c5cee9adc12256e6cd89c3761f203f660e83568",
-                "reference": "4c5cee9adc12256e6cd89c3761f203f660e83568",
+                "url": "https://api.github.com/repos/benjaminhirsch/nova-slug-field/zipball/207291988ea535d661e23b3f6cd33431cf9b739a",
+                "reference": "207291988ea535d661e23b3f6cd33431cf9b739a",
                 "shasum": ""
             },
             "require": {
@@ -53,7 +53,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-04-27T05:54:45+00:00"
+            "time": "2019-07-05T07:23:36+00:00"
         },
         {
             "name": "beyondcode/nova-tinker-tool",
@@ -1552,7 +1552,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "b616be9e7ef1bbd178ae26b4dfaac89f7814376d"
+                "reference": "ef9156f885ec9e5ecf27939d2806a025791c11cb"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
