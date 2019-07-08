@@ -11,6 +11,7 @@ before_script:
   - touch ./database/database.sqlite
   - wget http://134.209.189.240/nova.zip
   - unzip nova.zip
+  - pecl install imagick
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - php artisan key:generate
 
