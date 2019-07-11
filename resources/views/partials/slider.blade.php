@@ -4,7 +4,7 @@
     <div class="intro-carousel">
         <div class="intro-content">
             <div class="slider-images">
-                <img src="{{ image('Slider 3') }}" alt="Photo">
+                <img src="{{ image('Slider 3') }}" alt="Photo" height="100%">
             </div>
             <div class="slider-content">
                 <div class="display-table">
@@ -15,13 +15,14 @@
                                     {{-- layer 1 --}}
                                     <div class="layer-1">
                                         <h1 class="title2">Expert Multi-Discipline
-                                            <br/>
-                                            <span class="color">Entrepreneurs</span>
+                                            <br />
+                                            <span class="color">Travaux Publics</span>
                                         </h1>
                                     </div>
                                     {{-- layer 2 --}}
                                     <div class="layer-2 ">
-                                        <p>Plus de 13 ans de construction de la confiance et de l'excellence en Algérie.</p>
+                                        <p>Plus de 13 ans de construction de la confiance et de l'excellence en Algérie.
+                                        </p>
                                     </div>
                                     {{-- layer 3 --}}
                                     <div class="layer-3">
@@ -48,13 +49,14 @@
                                     {{-- layer 1 --}}
                                     <div class="layer-1">
                                         <h1 class="title2">Développer le futur
-                                            <br/>
+                                            <br />
                                             <span class="color">au-delà des limites</span>
                                         </h1>
                                     </div>
                                     {{-- layer 2 --}}
                                     <div class="layer-2 ">
-                                        <p>Plus de 13 ans de construction de la confiance et de l'excellence en Algérie.</p>
+                                        <p>Plus de 13 ans de construction de la confiance et de l'excellence en Algérie.
+                                        </p>
                                     </div>
                                     {{-- layer 3 --}}
                                     <div class="layer-3">

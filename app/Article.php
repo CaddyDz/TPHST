@@ -21,6 +21,7 @@ class Article extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null)
     {
+        // Background image for the article view 1920x500
         $this->addMediaConversion('thumb')
             ->width(700)
             ->height(700);

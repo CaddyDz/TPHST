@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', __('Home'))
+
 @section('content')
 <header class="header-style-2">
   @include('layouts.header.topbar')
