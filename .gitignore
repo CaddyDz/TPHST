@@ -18,3 +18,4 @@ yarn-error.log
 /resources/lang/vendor/nova
 /resources/views/vendor/*
 !/resources/views/vendor/nova
+yarn.lock
