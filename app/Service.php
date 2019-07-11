@@ -22,11 +22,11 @@ class Service extends Model implements HasMedia
     public function registerMediaConversions(Media $media = null)
     {
         $this->addMediaConversion('thumb')
-        ->width(700)
-        ->height(700);
+            ->width(700)
+            ->height(700);
         $this->addMediaConversion('avatar')
-        ->width(32)
-        ->height(32);
+            ->width(32)
+            ->height(32);
     }
 
     public function registerMediaCollections()

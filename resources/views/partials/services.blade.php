@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline text-center">
-                    <h3>Nos Services</h3>
-                    <p>SARL TPHST est un groupe d'ingénierie et d'entreprise générale qui a acquis son expertise au cours des 13 dernières années.</p>
+                    <h3>@lang('Our Services')</h3>
+                    <p>SARL TPHST est une entreprise qui a acquis son expertise au cours des 13 dernières années dans le domaine de travaux publics et hydraulique.</p>
                 </div>
             </div>
         </div>
@@ -19,7 +19,9 @@
                             </a>
                             <div class="service-content">
                                 <h4>
-                                    <a href="{{ route('service', ['service' => $service]) }}">{{ $service->name }}</a>
+                                    <a href="{{ route('service', ['service' => $service]) }}">
+                                        {{ $service->name }}
+                                    </a>
                                 </h4>
                                 <p>{{ $service->description }}</p>
                             </div>
