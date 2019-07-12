@@ -1552,7 +1552,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "ef9156f885ec9e5ecf27939d2806a025791c11cb"
+                "reference": "468c098c0389884881e4626c572bdcdc57a44340"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -2958,16 +2958,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.6.1",
+            "version": "7.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "ba5437eb92c537530538d68cb29181233d257fa0"
+                "reference": "71845e68609cd4a76990b088cbd794f0c576e53d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/ba5437eb92c537530538d68cb29181233d257fa0",
-                "reference": "ba5437eb92c537530538d68cb29181233d257fa0",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/71845e68609cd4a76990b088cbd794f0c576e53d",
+                "reference": "71845e68609cd4a76990b088cbd794f0c576e53d",
                 "shasum": ""
             },
             "require": {
@@ -3037,7 +3037,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-07-04T11:01:02+00:00"
+            "time": "2019-07-11T14:04:27+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
