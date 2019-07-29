@@ -1552,7 +1552,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "b90a73e2d374bd8babf5becaf4894f7c573b1cf8"
+                "reference": "3b9997e5109a74dea1304e71638d5faf12aaa049"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -3019,16 +3019,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.6.9",
+            "version": "7.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "b73de128de2fbc124beff3bc3dd9b6e549c4e009"
+                "reference": "9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/b73de128de2fbc124beff3bc3dd9b6e549c4e009",
-                "reference": "b73de128de2fbc124beff3bc3dd9b6e549c4e009",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d",
+                "reference": "9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d",
                 "shasum": ""
             },
             "require": {
@@ -3100,7 +3100,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-07-22T23:50:27+00:00"
+            "time": "2019-07-27T16:58:18+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
@@ -3199,9 +3199,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
+                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
+                    "homepage": "https://spatie.be"
                 }
             ],
             "description": "A magic memoization function",
@@ -4293,7 +4293,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.3.2",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -4916,8 +4916,8 @@
             "authors": [
                 {
                     "name": "zOxta",
-                    "email": "ezoxta@gmail.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "ezoxta@gmail.com"
                 }
             ],
             "description": "Purge your CloudFlare's cache in two clicks from a Laravel Nova dashboard card.",
@@ -5820,8 +5820,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
