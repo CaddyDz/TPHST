@@ -1552,7 +1552,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "77d174730e5a653a558ed8c8a96515a0f5b7026e"
+                "reference": "063c2f260056150bf94464348692d2da4eed93da"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -3019,16 +3019,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.7.0",
+            "version": "7.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d"
+                "reference": "8ad2fbb880343805fa33958046e30130d758312e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d",
-                "reference": "9e11b2812cb40ef41d7b2c64d2fab0be2e9b999d",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/8ad2fbb880343805fa33958046e30130d758312e",
+                "reference": "8ad2fbb880343805fa33958046e30130d758312e",
                 "shasum": ""
             },
             "require": {
@@ -3100,7 +3100,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-07-27T16:58:18+00:00"
+            "time": "2019-07-31T08:44:22+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
@@ -3217,16 +3217,16 @@
         },
         {
             "name": "spatie/pdf-to-image",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/pdf-to-image.git",
-                "reference": "f33afc92ff7bff272fa6a9ba1cc335e96c57eb26"
+                "reference": "22a580e03550c95ce810ad430e3c44d2f7a1c75a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/pdf-to-image/zipball/f33afc92ff7bff272fa6a9ba1cc335e96c57eb26",
-                "reference": "f33afc92ff7bff272fa6a9ba1cc335e96c57eb26",
+                "url": "https://api.github.com/repos/spatie/pdf-to-image/zipball/22a580e03550c95ce810ad430e3c44d2f7a1c75a",
+                "reference": "22a580e03550c95ce810ad430e3c44d2f7a1c75a",
                 "shasum": ""
             },
             "require": {
@@ -3249,9 +3249,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
+                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
+                    "homepage": "https://spatie.be"
                 }
             ],
             "description": "Convert a pdf to an image",
@@ -3263,7 +3263,7 @@
                 "pdf-to-image",
                 "spatie"
             ],
-            "time": "2018-07-02T09:30:32+00:00"
+            "time": "2019-07-31T06:46:19+00:00"
         },
         {
             "name": "spatie/temporary-directory",
@@ -5538,18 +5538,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library for handling version information and constraints",
