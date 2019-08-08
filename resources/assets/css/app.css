@@ -1007,8 +1007,14 @@ select:focus {
 }
 
 .well-services {
+    height: 100%;
+    flex: 0 0 33.333333%;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
     z-index: 1;
+}
+
+.well-main-services > [class*="col-"] {
+    margin-top: 30px;
 }
 
 .main-services {
@@ -1170,14 +1176,19 @@ select:focus {
     margin-top: -30px;
 }
 
+.services-all > [class*="col-"] {
+    margin-top: 30px;
+}
+
 .single-services {
     box-shadow: none;
     min-height: 120px;
-    margin-top: 30px;
+    height: 100%;
     position: relative;
     z-index: 1;
     border: 1px solid #fbac02;
     padding: 20px 10px;
+    flex: 0 0 33.333333%;
 }
 
 .service-images {
