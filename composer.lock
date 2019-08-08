@@ -94,9 +94,9 @@
             "authors": [
                 {
                     "name": "Marcel Pociot",
+                    "role": "Developer",
                     "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondco.de",
-                    "role": "Developer"
+                    "homepage": "https://beyondco.de"
                 }
             ],
             "description": "Use Laravel tinker from Nova.",
@@ -1555,7 +1555,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "1662bd33e7633d4b59a720e36cd463d809da71ea"
+                "reference": "560f2be8d764812e744a2e32cbf903449e9f89d4"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -2919,16 +2919,16 @@
         },
         {
             "name": "spatie/image",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image.git",
-                "reference": "61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85"
+                "reference": "8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image/zipball/61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85",
-                "reference": "61fa48fa4cb85eda4ef4f8f20b1c27edd9d38e85",
+                "url": "https://api.github.com/repos/spatie/image/zipball/8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef",
+                "reference": "8aac77a3ee18d7e0e5cb51cd67eb9558f1f491ef",
                 "shasum": ""
             },
             "require": {
@@ -2968,7 +2968,7 @@
                 "image",
                 "spatie"
             ],
-            "time": "2019-05-13T11:38:22+00:00"
+            "time": "2019-08-02T23:57:44+00:00"
         },
         {
             "name": "spatie/image-optimizer",
@@ -3022,16 +3022,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.8.2",
+            "version": "7.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "8ad2fbb880343805fa33958046e30130d758312e"
+                "reference": "7e5b22f7c6ed39631d82377b94b9bc09e159fc92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/8ad2fbb880343805fa33958046e30130d758312e",
-                "reference": "8ad2fbb880343805fa33958046e30130d758312e",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/7e5b22f7c6ed39631d82377b94b9bc09e159fc92",
+                "reference": "7e5b22f7c6ed39631d82377b94b9bc09e159fc92",
                 "shasum": ""
             },
             "require": {
@@ -3103,7 +3103,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-07-31T08:44:22+00:00"
+            "time": "2019-08-07T07:13:55+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
