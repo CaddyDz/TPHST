@@ -16,7 +16,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="copyright">
                         <p>
-                            Droits d'auteur © {{ date('Y') }}
+                            @lang('Copyrights') © {{ date('Y') }}
                             <a href="/">{{ config('app.name') }}</a> Tous les droits sont réservés
                         </p>
                     </div>

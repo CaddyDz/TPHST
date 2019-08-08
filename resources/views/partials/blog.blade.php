@@ -1,3 +1,4 @@
+@if ($articles->isNotEmpty())
 <div class="blog-area area-padding">
     <div class="container">
         <div class="row">
@@ -20,3 +21,4 @@
         </div>
     </div>
 </div>
+@endif
