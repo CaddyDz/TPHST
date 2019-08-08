@@ -308,6 +308,11 @@ select:focus {
     margin-top: 50px;
 }
 
+.equal-columns-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .parallax-bg {
     position: relative;
 }
