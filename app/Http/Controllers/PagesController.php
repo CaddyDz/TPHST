@@ -2,9 +2,9 @@
 
 namespace TPHST\Http\Controllers;
 
+use TPHST\Image;
 use TPHST\Client;
 use TPHST\Project;
-use TPHST\Image;
 
 class PagesController extends Controller
 {

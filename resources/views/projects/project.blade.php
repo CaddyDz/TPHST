@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', $project->title)
+
 @section('content')
 @include('layouts.header.bottom', [
     'background' => $project->thumb,

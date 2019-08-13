@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', __('Contact Us'))
+
 @section('content')
 
 @include('layouts.header.bottom', [

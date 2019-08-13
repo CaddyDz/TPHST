@@ -1,6 +1,6 @@
 @extends('layouts.page')
 
-@section('title', __('Review'))
+@section('title', __('Reviews from peers'))
 
 @section('content')
 

@@ -1,4 +1,7 @@
-@extends('layouts.app') 
+@extends('layouts.app')
+
+@section('title', __('Frequently Asked Questions'))
+
 @section('content')
 <div class="topbar-area fix hidden-xs">
     <div class="container">

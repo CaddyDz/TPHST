@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', $service->name)
+
 @section('content')
 <div class="single-services-page area-padding">
   <div class="container">

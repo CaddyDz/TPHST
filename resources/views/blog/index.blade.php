@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', __('All Articles'))
+
 @section('content')
 @include('layouts.header.bottom', [
     'background' => image('Blog Background'),

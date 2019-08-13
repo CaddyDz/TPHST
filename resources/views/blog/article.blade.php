@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', $article->title)
+
 @section('content')
 
 @include('layouts.header.bottom', [
