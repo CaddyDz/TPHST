@@ -762,16 +762,16 @@
         },
         {
             "name": "ebess/advanced-nova-media-library",
-            "version": "2.7.2",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ebess/advanced-nova-media-library.git",
-                "reference": "8501c422579b4c536a9248a8253e1c594446ec6c"
+                "reference": "a792a305f5a05a9385ad7bbd8f95c36788483d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ebess/advanced-nova-media-library/zipball/8501c422579b4c536a9248a8253e1c594446ec6c",
-                "reference": "8501c422579b4c536a9248a8253e1c594446ec6c",
+                "url": "https://api.github.com/repos/ebess/advanced-nova-media-library/zipball/a792a305f5a05a9385ad7bbd8f95c36788483d9a",
+                "reference": "a792a305f5a05a9385ad7bbd8f95c36788483d9a",
                 "shasum": ""
             },
             "require": {
@@ -801,7 +801,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-05-20T07:09:19+00:00"
+            "time": "2019-08-29T10:34:09+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1555,7 +1555,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "9438f3591c9feaf0f944737f91a7422a2035ff68"
+                "reference": "e60e18de8047aef5604ad70d916eeadd0892d241"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
