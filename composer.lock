@@ -718,16 +718,16 @@
         },
         {
             "name": "drewm/mailchimp-api",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drewm/mailchimp-api.git",
-                "reference": "a6519cafba509e754e748d93f3532ad7f3aa515a"
+                "reference": "c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drewm/mailchimp-api/zipball/a6519cafba509e754e748d93f3532ad7f3aa515a",
-                "reference": "a6519cafba509e754e748d93f3532ad7f3aa515a",
+                "url": "https://api.github.com/repos/drewm/mailchimp-api/zipball/c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a",
+                "reference": "c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +758,7 @@
             ],
             "description": "Super-simple, minimum abstraction MailChimp API v3 wrapper",
             "homepage": "https://github.com/drewm/mailchimp-api",
-            "time": "2019-03-28T15:20:43+00:00"
+            "time": "2019-08-06T09:24:58+00:00"
         },
         {
             "name": "ebess/advanced-nova-media-library",
@@ -3108,21 +3108,21 @@
         },
         {
             "name": "spatie/laravel-newsletter",
-            "version": "4.5.0",
+            "version": "4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-newsletter.git",
-                "reference": "e5b351c5bca50cf246acdb402e5bc91d0da4f337"
+                "reference": "3adf8ca71cea4e79dfced6dcbb1fcecd16b84490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/e5b351c5bca50cf246acdb402e5bc91d0da4f337",
-                "reference": "e5b351c5bca50cf246acdb402e5bc91d0da4f337",
+                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/3adf8ca71cea4e79dfced6dcbb1fcecd16b84490",
+                "reference": "3adf8ca71cea4e79dfced6dcbb1fcecd16b84490",
                 "shasum": ""
             },
             "require": {
                 "drewm/mailchimp-api": "^2.4",
-                "illuminate/support": "~5.8.0",
+                "illuminate/support": "~5.8.0|~6.0.0",
                 "php": "~7.2"
             },
             "require-dev": {
@@ -3164,7 +3164,7 @@
                 "mailchimp",
                 "newsletter"
             ],
-            "time": "2019-05-21T07:27:27+00:00"
+            "time": "2019-09-04T09:00:22+00:00"
         },
         {
             "name": "spatie/once",
