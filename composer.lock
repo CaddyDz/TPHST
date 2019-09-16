@@ -1557,7 +1557,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "03bc00e93e04441b25020e644750bd790462ca03"
+                "reference": "d70f8ec180ab3e6ecf8ad50dd4d3fff8c1fafc41"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -3109,16 +3109,16 @@
         },
         {
             "name": "spatie/laravel-newsletter",
-            "version": "4.6.0",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-newsletter.git",
-                "reference": "3adf8ca71cea4e79dfced6dcbb1fcecd16b84490"
+                "reference": "68a28992ebeba45b856afb1cd42a35e8ce782e30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/3adf8ca71cea4e79dfced6dcbb1fcecd16b84490",
-                "reference": "3adf8ca71cea4e79dfced6dcbb1fcecd16b84490",
+                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/68a28992ebeba45b856afb1cd42a35e8ce782e30",
+                "reference": "68a28992ebeba45b856afb1cd42a35e8ce782e30",
                 "shasum": ""
             },
             "require": {
@@ -3165,7 +3165,7 @@
                 "mailchimp",
                 "newsletter"
             ],
-            "time": "2019-09-04T09:00:22+00:00"
+            "time": "2019-09-13T09:27:06+00:00"
         },
         {
             "name": "spatie/once",
@@ -6763,8 +6763,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
