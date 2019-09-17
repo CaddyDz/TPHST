@@ -200,8 +200,8 @@
             "authors": [
                 {
                     "name": "David Griffiths",
-                    "role": "Developer",
-                    "homepage": "https://github.com/David-Griffiths"
+                    "homepage": "https://github.com/David-Griffiths",
+                    "role": "Developer"
                 }
             ],
             "description": "A dark theme for Laravel Nova",
@@ -1557,7 +1557,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "d70f8ec180ab3e6ecf8ad50dd4d3fff8c1fafc41"
+                "reference": "0967b8bc60daa62534092f4b004c44f073ee29c6"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -3108,21 +3108,21 @@
         },
         {
             "name": "spatie/laravel-newsletter",
-            "version": "4.7.0",
+            "version": "4.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-newsletter.git",
-                "reference": "68a28992ebeba45b856afb1cd42a35e8ce782e30"
+                "reference": "c41a7d067379dac873b1e202f83fbb3ecafc02ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/68a28992ebeba45b856afb1cd42a35e8ce782e30",
-                "reference": "68a28992ebeba45b856afb1cd42a35e8ce782e30",
+                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/c41a7d067379dac873b1e202f83fbb3ecafc02ba",
+                "reference": "c41a7d067379dac873b1e202f83fbb3ecafc02ba",
                 "shasum": ""
             },
             "require": {
                 "drewm/mailchimp-api": "^2.4",
-                "illuminate/support": "~5.8.0|~6.0.0",
+                "illuminate/support": "~5.8.0|^6.0",
                 "php": "~7.2"
             },
             "require-dev": {
@@ -3164,7 +3164,7 @@
                 "mailchimp",
                 "newsletter"
             ],
-            "time": "2019-09-13T09:27:06+00:00"
+            "time": "2019-09-16T09:35:27+00:00"
         },
         {
             "name": "spatie/once",
