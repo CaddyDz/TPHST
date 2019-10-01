@@ -1557,7 +1557,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "9564fb23c0e722a6be525263934e691594186db4"
+                "reference": "b59ce496d21638e9815bf72efc2442b1c17a673c"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -4925,8 +4925,8 @@
             "authors": [
                 {
                     "name": "zOxta",
-                    "role": "Developer",
-                    "email": "ezoxta@gmail.com"
+                    "email": "ezoxta@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Purge your CloudFlare's cache in two clicks from a Laravel Nova dashboard card.",
@@ -5287,16 +5287,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031"
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/4eff936d83eb809bde2c57a3cea0ee9643769031",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/b3453f75fd23d9fd41685f2148f4abeacabc6405",
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405",
                 "shasum": ""
             },
             "require": {
@@ -5310,7 +5310,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -5348,7 +5348,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-08-07T15:01:07+00:00"
+            "time": "2019-09-30T08:30:27+00:00"
         },
         {
             "name": "myclabs/deep-copy",
