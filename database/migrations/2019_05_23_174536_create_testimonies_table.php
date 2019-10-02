@@ -18,6 +18,8 @@ class CreateTestimoniesTable extends Migration
             $table->text('body');
             $table->string('witness_name');
             $table->string('witness_position');
+            $table->unsignedInteger('service_id')->nullable();
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->timestamps();
         });
     }

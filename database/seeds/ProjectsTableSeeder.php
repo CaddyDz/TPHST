@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TPHST\Project;
+use Illuminate\Database\Seeder;
 
 class ProjectsTableSeeder extends Seeder
 {
@@ -36,8 +36,8 @@ class ProjectsTableSeeder extends Seeder
         ]);
         Project::create([
             'category_id' => rand(1, 8),
-            'title' => $titles[1],
-            'slug' => sluggify($titles[1]),
+            'title' => $titles[2],
+            'slug' => sluggify($titles[2]),
             'description' => 'Mise a niveau des routes nationales dans le cadre programme de consolidation de la croissance économique - 2013 -',
             'location' => 'RN66',
         ]);

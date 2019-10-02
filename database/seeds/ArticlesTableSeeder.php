@@ -13,8 +13,10 @@ class ArticlesTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        factory(Article::class, 20)->create()->each(function($article) use ($faker) {
-            $article->addMedia($faker->unique()->image($dir = '/tmp', $width = 640, $height = 360, 'city'))->toMediaCollection('images');
-        });
+        factory(Article::class, 20)->create();
+        // ->each(function($article) use ($faker) {
+        //     $article->addMedia($faker->unique()->image($dir = '/tmp', $width = 640, $height = 360, 'city'))
+        //             ->toMediaCollection('images');
+        // });
     }
 }

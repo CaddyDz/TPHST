@@ -20,7 +20,7 @@ $factory->define(Article::class, function (Faker $faker) {
         'body' => $faker->text,
         'slug' => sluggify($sentence),
         'meta_description' => $faker->text,
-        'meta_keywords' => $faker->words(5),
+        'meta_keywords' => implode(', ', $faker->words(5)),
         'status' => $faker->randomElement(['PUBLISHED', 'DRAFT', 'PENDING']),
         'featured' => $faker->boolean(),
     ];
