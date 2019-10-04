@@ -9,7 +9,7 @@ before_script:
   - cp .env.travis .env
   - composer self-update
   - touch ./database/database.sqlite
-  - wget https://salimdj.me/storage/nova.zip
+  - wget https://www.dropbox.com/s/66syw88qjxclgfc/nova.zip
   - unzip nova.zip
   - printf "\n" | pecl install imagick
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
