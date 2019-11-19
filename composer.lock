@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb24bdc88169f1b4166c7cf5dc60a445",
+    "content-hash": "d4af86a3084070789978c457dbce90c3",
     "packages": [
         {
             "name": "benjaminhirsch/nova-slug-field",
@@ -974,16 +974,16 @@
         },
         {
             "name": "gregoriohc/laravel-nova-theme-responsive",
-            "version": "v0.7.0",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gregoriohc/laravel-nova-theme-responsive.git",
-                "reference": "fb2d13fa8ddfe3b2ad5c0029e43ed8fbbd147732"
+                "reference": "0394991448f10c77504d8412ae39bcec7dfc7faf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/fb2d13fa8ddfe3b2ad5c0029e43ed8fbbd147732",
-                "reference": "fb2d13fa8ddfe3b2ad5c0029e43ed8fbbd147732",
+                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/0394991448f10c77504d8412ae39bcec7dfc7faf",
+                "reference": "0394991448f10c77504d8412ae39bcec7dfc7faf",
                 "shasum": ""
             },
             "require": {
@@ -1020,7 +1020,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-11-01T18:31:16+00:00"
+            "time": "2019-11-18T11:46:58+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1567,7 +1567,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "23c2e4b474c233da5e16c2a871b3311dda1f88dd"
+                "reference": "83948cae1701fbbd5acac0956a038708baf46265"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
