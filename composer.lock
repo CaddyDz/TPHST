@@ -1567,7 +1567,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "1ba5551ceb674fc02e9c5d798775dbdbe020822a"
+                "reference": "f074bca3d1b9a5149882c7a47219e391efa21d05"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -1688,16 +1688,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.57",
+            "version": "1.0.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a"
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
-                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4fb13c01784a6c9f165a351e996871488ca2d8c9",
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9",
                 "shasum": ""
             },
             "require": {
@@ -1768,7 +1768,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-10-16T21:01:05+00:00"
+            "time": "2019-12-08T21:46:50+00:00"
         },
         {
             "name": "league/glide",
@@ -3034,16 +3034,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.16.0",
+            "version": "7.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "9fa2989f826da065d098f6f865cc7ad755c35d33"
+                "reference": "1a882349f216855a37583dff81ff44bd1ec4ea63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/9fa2989f826da065d098f6f865cc7ad755c35d33",
-                "reference": "9fa2989f826da065d098f6f865cc7ad755c35d33",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/1a882349f216855a37583dff81ff44bd1ec4ea63",
+                "reference": "1a882349f216855a37583dff81ff44bd1ec4ea63",
                 "shasum": ""
             },
             "require": {
@@ -3114,7 +3114,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-12-02T20:15:48+00:00"
+            "time": "2019-12-11T07:58:06+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
