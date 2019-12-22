@@ -4,7 +4,10 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="about-content">
                     <h4>OEuvrer pour l’avenir</h4>
-                    <p>La réalisation des travaux routiers et autoroutiers constitue le métier de base de l’entreprise depuis 2005. L’expérience capitalisée dans les travaux de revêtement des routes et autoroutes ainsi que des voies express, a fait du l'entreprise TPHST Fréres Kheniche un leader incontesté du domaine en Algérie.</p>
+                    <p>La réalisation des travaux routiers et autoroutiers constitue le métier de base de l’entreprise
+                        depuis 2005. L’expérience capitalisée dans les travaux de revêtement des routes et autoroutes
+                        ainsi que des voies express, a fait du l'entreprise TPHST Fréres Kheniche un leader incontesté
+                        du domaine en Algérie.</p>
                     <div class="about-details text-center">
                         <div class="single-about">
                             <a href="#">
@@ -29,7 +32,7 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="about-image">
-                    <img src="{{ secure_asset(image('About Image')) }}" alt="Image">
+                    <img src="{{ secure_asset('storage/' . image('About Image')) }}" alt="Image">
                     <span class="frame-img">
                         <img src="/img/frame.png" alt="Image">
                         <span class="frame-text">13 ans d'expérience</span>
