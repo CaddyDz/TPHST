@@ -16,7 +16,7 @@
         "doctrine/dbal": "^2.9",
         "ebess/advanced-nova-media-library": "^2.7",
         "fideloper/proxy": "^4.0",
-        "gregoriohc/laravel-nova-theme-responsive": "^0.6.1",
+        "gregoriohc/laravel-nova-theme-responsive": "^0.8.0",
         "laravel/framework": "5.8.*",
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
