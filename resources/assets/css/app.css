@@ -4,7 +4,7 @@
 
     1. Theme Default CSS (body, link color, section etc)
 	2. Header top Area
-		2.1 Header Middle  Area 
+		2.1 Header Middle  Area
 		2.2 Header bottom  Area
 		2.3. Sticky Header Area
 		2.4. Mobile Menu Area
@@ -386,7 +386,7 @@ select:focus {
 
 /*----------------------------------------*/
 
-/*  2.1 Header Middle  Area 
+/*  2.1 Header Middle  Area
 /*----------------------------------------*/
 
 .logo {
@@ -451,7 +451,7 @@ select:focus {
 
 /*----------------------------------------*/
 
-/*  2.2 Header bottom  Area 
+/*  2.2 Header bottom  Area
 /*----------------------------------------*/
 
 .header-area {
@@ -1013,7 +1013,7 @@ select:focus {
     z-index: 1;
 }
 
-.well-main-services > [class*="col-"] {
+.well-main-services>[class*="col-"] {
     margin-top: 30px;
 }
 
@@ -1172,11 +1172,7 @@ select:focus {
     background: #fff;
 }
 
-.services-all {
-    margin-top: -30px;
-}
-
-.services-all > [class*="col-"] {
+.services-all>[class*="col-"] {
     margin-top: 30px;
 }
 
