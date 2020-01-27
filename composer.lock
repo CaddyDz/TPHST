@@ -1576,7 +1576,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "b782a2b418f2772e7bfa1f827e74966c14475f6a"
+                "reference": "6f05d262eff053659f9e3f05ab2409529f3c26bc"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -2954,20 +2954,21 @@
         },
         {
             "name": "spatie/image",
-            "version": "1.7.5",
+            "version": "1.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image.git",
-                "reference": "9e36dcc1c5da4e8756a4fd00228342a9c9953f4b"
+                "reference": "74535b5fd67ace75840c00c408666660843e755e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image/zipball/9e36dcc1c5da4e8756a4fd00228342a9c9953f4b",
-                "reference": "9e36dcc1c5da4e8756a4fd00228342a9c9953f4b",
+                "url": "https://api.github.com/repos/spatie/image/zipball/74535b5fd67ace75840c00c408666660843e755e",
+                "reference": "74535b5fd67ace75840c00c408666660843e755e",
                 "shasum": ""
             },
             "require": {
                 "ext-exif": "*",
+                "ext-mbstring": "*",
                 "league/glide": "^1.4",
                 "php": "^7.0",
                 "spatie/image-optimizer": "^1.0",
@@ -3003,7 +3004,7 @@
                 "image",
                 "spatie"
             ],
-            "time": "2019-11-23T17:56:34+00:00"
+            "time": "2020-01-26T18:56:44+00:00"
         },
         {
             "name": "spatie/image-optimizer",
@@ -3057,32 +3058,33 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.18.1",
+            "version": "7.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "0b0a729ce7253a08bf8d7a8c97c172e54f7203ae"
+                "reference": "08a004244205cda5466adb16fea436d59fd63d29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/0b0a729ce7253a08bf8d7a8c97c172e54f7203ae",
-                "reference": "0b0a729ce7253a08bf8d7a8c97c172e54f7203ae",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/08a004244205cda5466adb16fea436d59fd63d29",
+                "reference": "08a004244205cda5466adb16fea436d59fd63d29",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
-                "illuminate/bus": "~5.8.35|^6.0",
-                "illuminate/console": "~5.8.35|^6.0",
-                "illuminate/database": "~5.8.35|^6.0",
-                "illuminate/pipeline": "~5.8.35|^6.0",
-                "illuminate/support": "~5.8.35|^6.0",
+                "ext-json": "*",
+                "illuminate/bus": "~5.8.35|^6.0|^7.0",
+                "illuminate/console": "~5.8.35|^6.0|^7.0",
+                "illuminate/database": "~5.8.35|^6.0|^7.0",
+                "illuminate/pipeline": "~5.8.35|^6.0|^7.0",
+                "illuminate/support": "~5.8.35|^6.0|^7.0",
                 "league/flysystem": "^1.0.8",
                 "maennchen/zipstream-php": "^1.0",
                 "php": "^7.2",
                 "spatie/image": "^1.4.0",
                 "spatie/pdf-to-image": "^2.0",
                 "spatie/temporary-directory": "^1.1",
-                "symfony/console": "^4.4"
+                "symfony/console": "^4.4|^5.0"
             },
             "conflict": {
                 "php-ffmpeg/php-ffmpeg": "<0.6.1"
@@ -3092,8 +3094,8 @@
                 "ext-pdo_sqlite": "*",
                 "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-aws-s3-v3": "^1.0.13",
-                "mockery/mockery": "^1.0.0",
-                "orchestra/testbench": "~3.8.0|^4.0",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^3.8|^4.0|^5.0",
                 "phpunit/phpunit": "^8.0",
                 "spatie/phpunit-snapshot-assertions": "^2.0"
             },
@@ -3138,7 +3140,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2020-01-15T14:03:33+00:00"
+            "time": "2020-01-25T11:32:31+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
@@ -3413,16 +3415,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.1",
+            "version": "v4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201"
+                "reference": "e9ee09d087e2c88eaf6e5fc0f5c574f64d100e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
-                "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e9ee09d087e2c88eaf6e5fc0f5c574f64d100e4f",
+                "reference": "e9ee09d087e2c88eaf6e5fc0f5c574f64d100e4f",
                 "shasum": ""
             },
             "require": {
@@ -3485,7 +3487,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-01T10:06:17+00:00"
+            "time": "2020-01-10T21:54:01+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4389,16 +4391,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.2",
+            "version": "v4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "b84501ad50adb72a94fb460a5b5c91f693e99c9b"
+                "reference": "f5697ab4cb14a5deed7473819e63141bf5352c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/b84501ad50adb72a94fb460a5b5c91f693e99c9b",
-                "reference": "b84501ad50adb72a94fb460a5b5c91f693e99c9b",
+                "url": "https://api.github.com/repos/symfony/process/zipball/f5697ab4cb14a5deed7473819e63141bf5352c36",
+                "reference": "f5697ab4cb14a5deed7473819e63141bf5352c36",
                 "shasum": ""
             },
             "require": {
@@ -4434,7 +4436,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-12-06T10:06:46+00:00"
+            "time": "2020-01-09T09:50:08+00:00"
         },
         {
             "name": "symfony/routing",
