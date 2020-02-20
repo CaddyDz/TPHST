@@ -1577,7 +1577,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "370e0c6acf92e396bc4c01f2c60785dacc87bb08"
+                "reference": "091b239ddd6d772c1da3633c0b63c330b32fbad5"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -2032,16 +2032,16 @@
         },
         {
             "name": "myclabs/php-enum",
-            "version": "1.7.2",
+            "version": "1.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "45f01adf6922df6082bcda36619deb466e826acf"
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/45f01adf6922df6082bcda36619deb466e826acf",
-                "reference": "45f01adf6922df6082bcda36619deb466e826acf",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
                 "shasum": ""
             },
             "require": {
@@ -2049,8 +2049,9 @@
                 "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
-                "squizlabs/php_codesniffer": "1.*"
+                "phpunit/phpunit": "^7",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^3.8"
             },
             "type": "library",
             "autoload": {
@@ -2073,7 +2074,7 @@
             "keywords": [
                 "enum"
             ],
-            "time": "2019-08-19T13:53:00+00:00"
+            "time": "2020-02-14T08:15:52+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -3059,16 +3060,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.18.2",
+            "version": "7.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "08a004244205cda5466adb16fea436d59fd63d29"
+                "reference": "4ec74e92b80808727818e38199b8f82ad7983b31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/08a004244205cda5466adb16fea436d59fd63d29",
-                "reference": "08a004244205cda5466adb16fea436d59fd63d29",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/4ec74e92b80808727818e38199b8f82ad7983b31",
+                "reference": "4ec74e92b80808727818e38199b8f82ad7983b31",
                 "shasum": ""
             },
             "require": {
@@ -3141,7 +3142,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2020-01-25T11:32:31+00:00"
+            "time": "2020-02-19T10:45:42+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
