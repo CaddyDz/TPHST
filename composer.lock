@@ -1577,7 +1577,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "ee1d166a2fc506f053fb8d79618bcba5a40f3874"
+                "reference": "5bcad082f36813a661fbb739574f2502bee34a15"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -3060,16 +3060,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.18.3",
+            "version": "7.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "4ec74e92b80808727818e38199b8f82ad7983b31"
+                "reference": "944f00a8e886abcb5e2166ae17660917a086368d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/4ec74e92b80808727818e38199b8f82ad7983b31",
-                "reference": "4ec74e92b80808727818e38199b8f82ad7983b31",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/944f00a8e886abcb5e2166ae17660917a086368d",
+                "reference": "944f00a8e886abcb5e2166ae17660917a086368d",
                 "shasum": ""
             },
             "require": {
@@ -3142,7 +3142,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2020-02-19T10:45:42+00:00"
+            "time": "2020-03-04T19:00:40+00:00"
         },
         {
             "name": "spatie/laravel-newsletter",
@@ -3417,16 +3417,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.4",
+            "version": "v4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f512001679f37e6a042b51897ed24a2f05eba656"
+                "reference": "4fa15ae7be74e53f6ec8c83ed403b97e23b665e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f512001679f37e6a042b51897ed24a2f05eba656",
-                "reference": "f512001679f37e6a042b51897ed24a2f05eba656",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4fa15ae7be74e53f6ec8c83ed403b97e23b665e9",
+                "reference": "4fa15ae7be74e53f6ec8c83ed403b97e23b665e9",
                 "shasum": ""
             },
             "require": {
@@ -3489,7 +3489,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-25T12:44:29+00:00"
+            "time": "2020-02-24T13:10:00+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4393,16 +4393,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.4",
+            "version": "v4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "f5697ab4cb14a5deed7473819e63141bf5352c36"
+                "reference": "bf9166bac906c9e69fb7a11d94875e7ced97bcd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/f5697ab4cb14a5deed7473819e63141bf5352c36",
-                "reference": "f5697ab4cb14a5deed7473819e63141bf5352c36",
+                "url": "https://api.github.com/repos/symfony/process/zipball/bf9166bac906c9e69fb7a11d94875e7ced97bcd7",
+                "reference": "bf9166bac906c9e69fb7a11d94875e7ced97bcd7",
                 "shasum": ""
             },
             "require": {
@@ -4438,7 +4438,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-09T09:50:08+00:00"
+            "time": "2020-02-07T20:06:44+00:00"
         },
         {
             "name": "symfony/routing",
