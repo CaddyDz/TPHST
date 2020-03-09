@@ -984,16 +984,16 @@
         },
         {
             "name": "gregoriohc/laravel-nova-theme-responsive",
-            "version": "v0.8.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gregoriohc/laravel-nova-theme-responsive.git",
-                "reference": "0394991448f10c77504d8412ae39bcec7dfc7faf"
+                "reference": "a37f8162872ea7483d2dec7091d29e49376df273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/0394991448f10c77504d8412ae39bcec7dfc7faf",
-                "reference": "0394991448f10c77504d8412ae39bcec7dfc7faf",
+                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/a37f8162872ea7483d2dec7091d29e49376df273",
+                "reference": "a37f8162872ea7483d2dec7091d29e49376df273",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "laravel",
                 "nova"
             ],
-            "time": "2019-11-18T11:46:58+00:00"
+            "time": "2020-03-08T16:15:03+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1577,7 +1577,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "5bcad082f36813a661fbb739574f2502bee34a15"
+                "reference": "8c4f29971e5ace293b0c2b4b4d6c719ebfb233d9"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
