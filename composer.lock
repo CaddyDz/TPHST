@@ -11,12 +11,12 @@
             "version": "1.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/benjaminhirsch/nova-slug-field.git",
+                "url": "https://github.com/tomhatzer/nova-slug-field.git",
                 "reference": "207291988ea535d661e23b3f6cd33431cf9b739a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminhirsch/nova-slug-field/zipball/207291988ea535d661e23b3f6cd33431cf9b739a",
+                "url": "https://api.github.com/repos/tomhatzer/nova-slug-field/zipball/207291988ea535d661e23b3f6cd33431cf9b739a",
                 "reference": "207291988ea535d661e23b3f6cd33431cf9b739a",
                 "shasum": ""
             },
@@ -1581,7 +1581,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "9d0e0b3635bd54a9a66c8007b610c244c34b77f2"
+                "reference": "0ab67ff79406e4a58df871d746d42e615a9719e4"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -5177,16 +5177,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130"
+                "reference": "17d0d3f266c8f925ebd035cd36f83cf802b47d4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
-                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/17d0d3f266c8f925ebd035cd36f83cf802b47d4a",
+                "reference": "17d0d3f266c8f925ebd035cd36f83cf802b47d4a",
                 "shasum": ""
             },
             "require": {
@@ -5234,7 +5234,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2020-01-15T10:00:00+00:00"
+            "time": "2020-05-05T12:28:07+00:00"
         },
         {
             "name": "fzaninotto/faker",
