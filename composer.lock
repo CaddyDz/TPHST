@@ -1595,7 +1595,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "e383a0334af07a1fa7bf30e832c3b2c9bf7e7f3f"
+                "reference": "e96a77f74e9834aff9327a0c1d71712ef9bd13fc"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -5464,16 +5464,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.4.1",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "9e785aa5584e8839fd43070202dd7f2e912db51c"
+                "reference": "91ee8b3acf0d72a4937f4855bd245acbda9910ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/9e785aa5584e8839fd43070202dd7f2e912db51c",
-                "reference": "9e785aa5584e8839fd43070202dd7f2e912db51c",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/91ee8b3acf0d72a4937f4855bd245acbda9910ac",
+                "reference": "91ee8b3acf0d72a4937f4855bd245acbda9910ac",
                 "shasum": ""
             },
             "require": {
@@ -5535,7 +5535,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-11T10:30:51+00:00"
+            "time": "2020-08-30T07:08:17+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -6566,6 +6566,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
