@@ -401,16 +401,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.10.3",
+            "version": "2.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "03ca23afc2ee062f5d3e32426ad37c34a4770dcf"
+                "reference": "47433196b6390d14409a33885ee42b6208160643"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/03ca23afc2ee062f5d3e32426ad37c34a4770dcf",
-                "reference": "03ca23afc2ee062f5d3e32426ad37c34a4770dcf",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/47433196b6390d14409a33885ee42b6208160643",
+                "reference": "47433196b6390d14409a33885ee42b6208160643",
                 "shasum": ""
             },
             "require": {
@@ -506,7 +506,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T01:35:42+00:00"
+            "time": "2020-09-12T21:20:41+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -1624,7 +1624,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "ace46c6f212e83039442b9c347b40eddbc471f40"
+                "reference": "b83cca25fb103bb283ab862edfbd62e246fa541f"
             },
             "require": {
                 "cakephp/chronos": "^1.0",
@@ -5418,12 +5418,12 @@
             "version": "v5.8.26",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
+                "url": "https://github.com/tighten/collect.git",
                 "reference": "fb65593a48518115b3026e2a6e665bb6c3584842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/fb65593a48518115b3026e2a6e665bb6c3584842",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/fb65593a48518115b3026e2a6e665bb6c3584842",
                 "reference": "fb65593a48518115b3026e2a6e665bb6c3584842",
                 "shasum": ""
             },
