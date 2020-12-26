@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,5 +28,5 @@ Route::get('blog/{article}', 'ArticlesController@show')->name('article');
 Route::get('blog', 'ArticlesController@index')->name('blog');
 Route::post('/subscribe', 'MailingListController@subscribe')->name('subscribe');
 Route::get('{service}', 'ServicesController@show')
-     ->name('service')
-     ->where('service', '^(?!nova|admin)[أ-يa-zA-Z0-9-_]*$');
+	 ->name('service')
+	 ->where('service', '^(?!nova|admin)[أ-يa-zA-Z0-9-_]*$');
