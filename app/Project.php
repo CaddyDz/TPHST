@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
-namespace TPHST;
+namespace App;
 
-use Spatie\MediaLibrary\Models\Media;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\{HasMedia, HasMediaTrait};
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibrary\{HasMedia, InteractsWithMedia};
+
+
 class Project extends Model implements HasMedia
 {
-	use HasMediaTrait;
+	use InteractsWithMedia;
 
 	public function getThumbAttribute()
 	{
@@ -29,17 +31,17 @@ class Project extends Model implements HasMedia
 		return null;
 	}
 
-	public function registerMediaConversions(Media $media = null)
+	public function registerMediaConversions(Media $media = null): void
 	{
 		$this->addMediaConversion('thumb')
-		  ->width(700)
-		  ->height(700);
+			->width(700)
+			->height(700);
 		$this->addMediaConversion('avatar')
-		  ->width(32)
-		  ->height(32);
+			->width(32)
+			->height(32);
 	}
 
-	public function registerMediaCollections()
+	public function registerMediaCollections(): void
 	{
 		$this->addMediaCollection('main')->singleFile();
 	}
@@ -50,20 +52,20 @@ class Project extends Model implements HasMedia
 	}
 
 	/**
-	   * The attributes that should be cast to native types.
-	   *
-	   * @var array
-	   */
+	 * The attributes that should be cast to native types.
+	 *
+	 * @var array
+	 */
 	protected $casts = [
-		  'starting_date' => 'date',
-		  'finishing_date' => 'date',
-	  ];
+		'starting_date' => 'date',
+		'finishing_date' => 'date',
+	];
 
-	  /**
-	   * Get the route key for the model.
-	   *
-	   * @return string
-	   */
+	/**
+	 * Get the route key for the model.
+	 *
+	 * @return string
+	 */
 	public function getRouteKeyName()
 	{
 		return 'slug';

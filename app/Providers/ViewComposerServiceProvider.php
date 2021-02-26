@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use TPHST\{Article, Project, Service, Testimony};
+use App\{Article, Project, Service, Testimony};
 
 class ViewComposerServiceProvider extends ServiceProvider
 {

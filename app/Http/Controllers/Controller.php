@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

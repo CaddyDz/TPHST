@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Providers;
+namespace App\Providers;
 
-use TPHST\Article;
+use App\Article;
 use Illuminate\Support\Arr;
 use Beyondcode\TinkerTool\Tinker;
+use App\Observers\ArticleObserver;
 use Illuminate\Support\Facades\Gate;
-use TPHST\Observers\ArticleObserver;
 use Dniccum\CustomEmailSender\CustomEmailSender;
 use Zoxta\NovaCloudflareCard\NovaCloudflareCard;
 use Laravel\Nova\{Nova, NovaApplicationServiceProvider};

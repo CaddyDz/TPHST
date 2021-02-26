@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use TPHST\Article;
+use App\Article;
 use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 
@@ -15,7 +15,7 @@ class ArticlesTableSeeder extends Seeder
 	 */
 	public function run(Faker $faker)
 	{
-		factory(Article::class, 20)->create();
+		Article::factory(20)->create();
 		// ->each(function($article) use ($faker) {
 		//     $article->addMedia($faker->unique()->image($dir = '/tmp', $width = 640, $height = 360, 'city'))
 		//             ->toMediaCollection('images');

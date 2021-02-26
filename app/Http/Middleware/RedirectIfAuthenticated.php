@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

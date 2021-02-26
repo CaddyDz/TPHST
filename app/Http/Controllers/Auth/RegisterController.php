@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use TPHST\User;
-use TPHST\Http\Controllers\Controller;
+use App\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\{Hash, Validator};
 
@@ -60,7 +60,7 @@ class RegisterController extends Controller
 	 * Create a new user instance after a valid registration.
 	 *
 	 * @param  array  $data
-	 * @return \TPHST\User
+	 * @return \App\User
 	 */
 	protected function create(array $data)
 	{

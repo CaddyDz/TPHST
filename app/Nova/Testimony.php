@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{Text, Textarea};
@@ -15,7 +15,7 @@ class Testimony extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Testimony';
+	public static $model = 'App\Testimony';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

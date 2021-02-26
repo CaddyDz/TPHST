@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Policies;
+namespace App\Policies;
 
-use TPHST\User;
+use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class BasePolicy
@@ -29,7 +29,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can view the model.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function view(User $user)
@@ -40,7 +40,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can create categories.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function create(User $user)
@@ -51,7 +51,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can update the model.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function update(User $user)
@@ -62,7 +62,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can delete the model.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function delete(User $user)
@@ -73,7 +73,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can restore the model.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function restore(User $user)
@@ -84,7 +84,7 @@ class BasePolicy
 	/**
 	 * Determine whether the user can permanently delete the model.
 	 *
-	 * @param  \TPHST\User  $user
+	 * @param  \App\User  $user
 	 * @return mixed
 	 */
 	public function forceDelete(User $user)

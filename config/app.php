@@ -152,17 +152,17 @@ return [
 		/*
 		 * Package Service Providers...
 		 */
-		TPHST\Providers\NovaServiceProvider::class,
+		App\Providers\NovaServiceProvider::class,
 		/*
 		 * Application Service Providers...
 		 */
-		TPHST\Providers\AppServiceProvider::class,
-		TPHST\Providers\AuthServiceProvider::class,
-		TPHST\Providers\BladeServiceProvider::class,
-		// TPHST\Providers\BroadcastServiceProvider::class,
-		TPHST\Providers\EventServiceProvider::class,
-		TPHST\Providers\RouteServiceProvider::class,
-		TPHST\Providers\ViewComposerServiceProvider::class,
+		App\Providers\AppServiceProvider::class,
+		App\Providers\AuthServiceProvider::class,
+		App\Providers\BladeServiceProvider::class,
+		// App\Providers\BroadcastServiceProvider::class,
+		App\Providers\EventServiceProvider::class,
+		App\Providers\RouteServiceProvider::class,
+		App\Providers\ViewComposerServiceProvider::class,
 
 	],
 

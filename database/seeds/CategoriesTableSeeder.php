@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use TPHST\Category;
+use App\Category;
 use Illuminate\Database\Seeder;
 
 class CategoriesTableSeeder extends Seeder

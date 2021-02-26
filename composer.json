@@ -10,28 +10,29 @@
     "require": {
         "php": "^7.2",
         "benjaminhirsch/nova-slug-field": "^1.2",
-        "beyondcode/nova-tinker-tool": "^1.0",
+        "beyondcode/nova-tinker-tool": "^1.1.0",
         "david-griffiths/nova-dark-theme": "^1.0",
-        "dniccum/custom-email-sender": "master",
+        "dniccum/custom-email-sender": "^2.0",
         "doctrine/dbal": "^2.9",
-        "ebess/advanced-nova-media-library": "^2.7",
+        "ebess/advanced-nova-media-library": "^3.4.0",
         "fideloper/proxy": "^4.0",
         "gregoriohc/laravel-nova-theme-responsive": "^0.8.0",
-        "laravel/framework": "5.8.*",
-        "laravel/nova": "*",
-        "laravel/tinker": "^1.0",
-        "phpoffice/phpword": "^0.17.0",
-        "spatie/laravel-medialibrary": "^7.0.0",
+        "laravel/framework": "^8.24",
+        "laravel/helpers": "^1.4",
+        "laravel/nova": "~3.0",
+        "laravel/tinker": "^2.6",
+        "phpoffice/phpword": "^0.18.0",
+        "spatie/laravel-medialibrary": "^9.0.0",
         "spatie/laravel-newsletter": "^4.5",
-        "zoxta/nova-cloudflare-card": "^1.0"
+        "zoxta/nova-cloudflare-card": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
         "filp/whoops": "^2.0",
-        "fzaninotto/faker": "^1.4",
+        "fakerphp/faker": "^1.4",
         "mockery/mockery": "^1.0",
-        "phpunit/phpunit": "^8.2",
-        "nunomaduro/collision": "^3.0"
+        "phpunit/phpunit": "^9.5.2",
+        "nunomaduro/collision": "^5.3"
     },
     "autoload": {
         "classmap": [
@@ -39,7 +40,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "TPHST\\": "app/"
+            "App\\": "app/"
         },
         "files": [
             "app/Helpers.php",
@@ -84,12 +85,12 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "path",
-            "url": "./nova"
+            "type": "composer",
+            "url": "https://nova.laravel.com"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/CaddyDz/nova-custom-email-sender"
+            "url": "https://github.com/Zidweb/nova-cloudflare-card"
         }
     ]
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers;
+namespace App\Http\Controllers;
 
-use TPHST\Project;
+use App\Project;
 
 class ProjectsController extends Controller
 {

@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers;
+namespace App\Http\Controllers;
 
-use TPHST\Mail\ContactMail;
+use App\Mail\ContactMail;
+use App\Exceptions\ContactException;
 use Illuminate\Support\Facades\Mail;
-use TPHST\Exceptions\ContactException;
-use TPHST\Http\Requests\ContactRequest;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
 	/**
 	 * Display a listing of the resource.
 	 *
-	 * @param  TPHST\Http\Requests\ContactRequest  $request
+	 * @param  App\Http\Requests\ContactRequest  $request
 	 * @return \Illuminate\Http\Response
 	 */
 	public function send(ContactRequest $request)

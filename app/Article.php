@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
-namespace TPHST;
+namespace App;
 
-use Spatie\MediaLibrary\Models\Media;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\{HasMedia, HasMediaTrait};
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibrary\{HasMedia, InteractsWithMedia};
+
 class Article extends Model implements HasMedia
 {
-	use HasMediaTrait;
+	use HasFactory, InteractsWithMedia;
 
 	public function getThumbAttribute()
 	{
@@ -19,7 +21,7 @@ class Article extends Model implements HasMedia
 		return '/img/article.jpg';
 	}
 
-	public function registerMediaConversions(Media $media = null)
+	public function registerMediaConversions(Media $media = null): void
 	{
 		// Background image for the article view 1920x500
 		$this->addMediaConversion('thumb')
@@ -30,7 +32,7 @@ class Article extends Model implements HasMedia
 			->height(32);
 	}
 
-	public function registerMediaCollections()
+	public function registerMediaCollections(): void
 	{
 		$this->addMediaCollection('main')->singleFile();
 	}

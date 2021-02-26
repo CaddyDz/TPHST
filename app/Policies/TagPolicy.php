@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Policies;
+namespace App\Policies;
 
 class TagPolicy extends BasePolicy
 {

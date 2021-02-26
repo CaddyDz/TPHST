@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use TPHST\Image;
+use App\Image;
 use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 

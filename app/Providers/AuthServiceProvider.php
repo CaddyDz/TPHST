@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Providers;
+namespace App\Providers;
 
-use TPHST\Article;
-use TPHST\Policies\ArticlePolicy;
+use App\Article;
+use App\Policies\ArticlePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider

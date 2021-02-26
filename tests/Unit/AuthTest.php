@@ -14,7 +14,7 @@ class AuthTest extends TestCase
 	 *
 	 * @return void
 	 */
-	public function testRedirectIfAuthenticated()
+	public function testRedirectIfAuthenticated(): void
 	{
 		$this->login();
 		$response = $this->get('/admin/login');

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ class Tag extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Tag';
+	public static $model = 'App\Tag';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

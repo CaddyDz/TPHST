@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers;
+namespace App\Http\Controllers;
 
-use TPHST\Service;
+use App\Service;
 
 class ServicesController extends Controller
 {
@@ -21,7 +21,7 @@ class ServicesController extends Controller
 	/**
 	 * Display the specified service.
 	 *
-	 * @param \TPHST\Service $service
+	 * @param \App\Service $service
 	 * @return \Illuminate\Http\Response
 	 */
 	public function show(Service $service)

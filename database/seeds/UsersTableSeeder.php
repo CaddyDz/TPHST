@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-use TPHST\User;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+
 
 class UsersTableSeeder extends Seeder
 {
@@ -18,7 +20,7 @@ class UsersTableSeeder extends Seeder
 			'name' => 'Admin',
 			'email' => 'webmaster@sarltphst.com',
 			'password' => bcrypt('password'),
-			'remember_token' => str_random(60),
+			'remember_token' => Str::random(60),
 		]);
 	}
 }

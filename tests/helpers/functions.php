@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-function create($model, $properties = [], $method = 'create', $times = null)
+function create(string $model, array $properties = [], string $method = 'create', int $times = null)
 {
-	return factory($model, $times)->$method($properties);
+	return $model::factory($times)->$method($properties);
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Mail;
+namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -38,7 +38,7 @@ class ContactMail extends Mailable implements ShouldQueue
 			'address' => $this->details['email'],
 			'name' => $this->details['name'],
 		])->subject($this->details['subject'])
-		  ->markdown('emails.contact')
-		  ->with('details', $this->details);
+			->markdown('emails.contact')
+			->with('details', $this->details);
 	}
 }

@@ -2,7 +2,7 @@
 
 return [
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Mail Driver
     |--------------------------------------------------------------------------
@@ -11,9 +11,9 @@ return [
     |
     */
 
-    'provider' => config('mail.driver'),
+	'provider' => config('mail.driver'),
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Priority
     |--------------------------------------------------------------------------
@@ -24,9 +24,9 @@ return [
     |
     */
 
-    'priority' => 'low',
+	'priority' => 'low',
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Mail Driver
     |--------------------------------------------------------------------------
@@ -35,12 +35,12 @@ return [
     |
     */
 
-    'from' => [
-        'address' => config('mail.from.address'),
-        'name' => config('mail.from.name'),
-    ],
+	'from' => [
+		'address' => config('mail.from.address'),
+		'name' => config('mail.from.name'),
+	],
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Default User Model
     |--------------------------------------------------------------------------
@@ -50,15 +50,15 @@ return [
     |
     */
 
-    'model' => [
-        'class' => \TPHST\User::class,
-        'email' => 'email',
-        'name' => null,
-        'first_name' => 'first_name',
-        'last_name' => 'last_name',
-    ],
+	'model' => [
+		'class' => \App\User::class,
+		'email' => 'email',
+		'name' => null,
+		'first_name' => 'first_name',
+		'last_name' => 'last_name',
+	],
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Email Template
     |--------------------------------------------------------------------------
@@ -75,12 +75,12 @@ return [
     |
     */
 
-    'template' => [
-        'markdown' => true,
-        'view' => 'vendor.custom-email-sender.email'
-    ],
+	'template' => [
+		'markdown' => true,
+		'view' => 'vendor.custom-email-sender.email'
+	],
 
-    /*
+	/*
     |--------------------------------------------------------------------------
     | Quill WYSIWYG editor configuration
     |--------------------------------------------------------------------------
@@ -91,17 +91,17 @@ return [
     |
     */
 
-    'editor' => [
+	'editor' => [
 
-        'toolbar' => [
-            ['header' => 1],
-            ['header' => 2],
-            ['list' => 'ordered'],
-            ['list' => 'bullet'],
-            'bold',
-            'italic',
-            'link',
-        ]
-    ],
+		'toolbar' => [
+			['header' => 1],
+			['header' => 2],
+			['list' => 'ordered'],
+			['list' => 'bullet'],
+			'bold',
+			'italic',
+			'link',
+		]
+	],
 
 ];

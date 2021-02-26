@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-namespace TPHST;
+namespace App;
 
-use Spatie\MediaLibrary\Models\Media;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\{HasMedia, HasMediaTrait};
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibrary\{HasMedia, InteractsWithMedia};
+
 class Testimony extends Model implements HasMedia
 {
-	use HasMediaTrait;
+	use InteractsWithMedia;
 
 	public function getWitnessAvatarAttribute()
 	{
@@ -19,14 +20,14 @@ class Testimony extends Model implements HasMedia
 		return 'null';
 	}
 
-	public function registerMediaConversions(Media $media = null)
+	public function registerMediaConversions(Media $media = null): void
 	{
 		$this->addMediaConversion('avatar')
 			->width(120)
 			->height(120);
 	}
 
-	public function registerMediaCollections()
+	public function registerMediaCollections(): void
 	{
 		$this->addMediaCollection('main')->singleFile();
 	}

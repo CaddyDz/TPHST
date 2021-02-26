@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-namespace TPHST;
+namespace App;
 
-use Spatie\MediaLibrary\Models\Media;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\{HasMedia, HasMediaTrait};
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibrary\{HasMedia, InteractsWithMedia};
+
 class Service extends Model implements HasMedia
 {
-	use HasMediaTrait;
+	use InteractsWithMedia;
 
 	public function getThumbAttribute()
 	{
@@ -19,7 +20,7 @@ class Service extends Model implements HasMedia
 		return '/img/service.jpg';
 	}
 
-	public function registerMediaConversions(Media $media = null)
+	public function registerMediaConversions(Media $media = null): void
 	{
 		$this->addMediaConversion('thumb')
 			->width(700)
@@ -29,7 +30,7 @@ class Service extends Model implements HasMedia
 			->height(32);
 	}
 
-	public function registerMediaCollections()
+	public function registerMediaCollections(): void
 	{
 		$this->addMediaCollection('main')->singleFile();
 	}

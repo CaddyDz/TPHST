@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Requests;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

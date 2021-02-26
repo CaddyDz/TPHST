@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers;
+namespace App\Http\Controllers;
 
-use TPHST\{Client, Image, Project};
+use App\{Client, Image, Project};
+
 class PagesController extends Controller
 {
 	public function index()

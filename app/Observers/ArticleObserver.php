@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Observers;
+namespace App\Observers;
 
-use TPHST\Article;
+use App\Article;
 
 class ArticleObserver
 {

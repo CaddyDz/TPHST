@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-use TPHST\{Image, Setting};
+use App\{Image, Setting};
+
 /**
  * return settings values
  *
@@ -21,13 +22,34 @@ function image($name)
 	return optional(Image::where('name', $name)->first())->path ?? "/img/$name.jpg";
 }
 
-function sluggify($string)
+function sluggify(string $string): string
 {
-	$url = trim($string);
+	// replace non letter or digits by -
+	$url = preg_replace('~[^\pL\d]+~u', '-', $string);
+
+	// transliterate
+	try {
+		$url = iconv('utf-8', 'us-ascii//TRANSLIT', $url);
+	} catch (Exception $ex) {
+		return 'n-a';
+	}
+
+	// remove unwanted characters
+	$url = preg_replace('~[^-\w]+~', '', $url);
+
+	// trim
+	$url = trim($url, '-');
+
+	// remove duplicate -
+	$url = preg_replace('~-+~', '-', $url);
+
+	// lowercase
 	$url = strtolower($url);
-	$url = preg_replace('|[^a-z-A-Z\p{Arabic}0-9 _]|iu', '', $url);
-	$url = preg_replace('/\s+/', ' ', $url);
-	$url = str_replace(' ', '-', $url);
+
+	if (empty($url)) {
+		return 'n-a';
+	}
+
 	return $url;
 }
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use TPHST\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

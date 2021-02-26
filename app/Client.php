@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace TPHST;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
-	
 }

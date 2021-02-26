@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{ID, Text};
+
 class Category extends Resource
 {
 	/**
@@ -13,7 +14,7 @@ class Category extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Category';
+	public static $model = 'App\Category';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Laravel\Nova\Resource as NovaResource;
 use Laravel\Nova\Http\Requests\NovaRequest;

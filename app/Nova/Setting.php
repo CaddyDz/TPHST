@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{ID, Text};
+
 class Setting extends Resource
 {
 	/**
@@ -13,7 +14,7 @@ class Setting extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\\Setting';
+	public static $model = 'App\\Setting';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

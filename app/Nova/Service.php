@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{ID, Image, Textarea};
 use Benjaminhirsch\NovaSlugField\{Slug, TextWithSlug};
+
 class Service extends Resource
 {
 	/**
@@ -14,7 +15,7 @@ class Service extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Service';
+	public static $model = 'App\Service';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

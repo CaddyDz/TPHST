@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use TPHST\Service;
+use App\Service;
 use Illuminate\Database\Seeder;
 
 class ServicesTableSeeder extends Seeder

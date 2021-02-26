@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use TPHST\Setting;
+use App\Setting;
 use Illuminate\Database\Seeder;
 
 class SettingsTableSeeder extends Seeder

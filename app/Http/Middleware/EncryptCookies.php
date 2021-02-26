@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

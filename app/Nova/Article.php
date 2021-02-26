@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
@@ -16,7 +16,7 @@ class Article extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Article';
+	public static $model = 'App\Article';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

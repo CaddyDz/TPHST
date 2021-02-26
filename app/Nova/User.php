@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{Gravatar, ID, Password, Text};
+
 class User extends Resource
 {
 	/**
@@ -13,7 +14,7 @@ class User extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\\User';
+	public static $model = 'App\\User';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.

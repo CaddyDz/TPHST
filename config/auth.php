@@ -69,7 +69,7 @@ return [
 	'providers' => [
 		'users' => [
 			'driver' => 'eloquent',
-			'model' => TPHST\User::class,
+			'model' => App\User::class,
 		],
 
 		// 'users' => [

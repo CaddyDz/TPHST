@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TPHST\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\{ID, Image as ImageField, Text};
+
 class Image extends Resource
 {
 	/**
@@ -13,7 +14,7 @@ class Image extends Resource
 	 *
 	 * @var string
 	 */
-	public static $model = 'TPHST\Image';
+	public static $model = 'App\Image';
 
 	/**
 	 * The single value that should be used to represent the resource when being displayed.
